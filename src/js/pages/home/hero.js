@@ -1,0 +1,1 @@
+import '../../../scss/components/pages/home/hero.scss';
