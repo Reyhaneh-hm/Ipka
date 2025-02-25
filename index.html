@@ -1,14 +1,155 @@
 <!doctype html>
 <html lang="fa">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ipka</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-    <script type="module" src="/src/js/pages/home/hero.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/images/Logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ipka</title>
+</head>
+
+<body>
+
+  <header class="navbar d-flex align-items-center justify-content-center">
+    <div class="container">
+      <div class="row">
+        <div class="card d-flex align-items-center justify-content-between">
+          <div class="right d-flex align-items-center justify-content-center">
+            <a href="./index.html" class="box-logo">
+              <i class="icon icon-Logo d-flex"></i>
+            </a>
+            <ul class="menu d-flex align-items-center justify-content-center">
+              <li class="item">
+                <a href="#" class="link">دسته بندی محصولات:</a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">علمی</a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">ریاضی</a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">هنری</a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">مهندسی</a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">فناوری</a>
+              </li>
+            </ul>
+          </div>
+          <div class="left d-flex align-items-center justify-content-center">
+            <div class="box-search">
+              <i class="icon icon-Search"></i>
+              <input type="search" class="input-search" placeholder="جستجو...">
+            </div>
+            <div class="access d-flex align-items-center justify-content-center">
+              <a href="#" class="link d-flex align-items-center justify-content-center">
+                <i class="icon icon-Vector" id="vector"></i>
+              </a>
+              <a href="#" class="link d-flex align-items-center justify-content-center">
+                <i class="icon icon-Card" id="card"></i>
+              </a>
+              <a href="#" class="link d-flex align-items-center justify-content-center">
+                <i class="icon icon-Ring" id="ring"></i>
+              </a>
+            </div>
+            <div class="user">
+              <img src="./public/images/Avatar.png" class="img-user" alt="avatar">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="slider">
+      <img src="/img/hero/Slider.png" class="img" alt="image slider">
+    </div>
+    <div class="container">
+      <div class="row card justify-content-center">
+        <div class="box-filter d-flex align-items-center justify-content-between">
+          <div class="right">
+            <div class="search">
+              <p class="title">جستجو</p>
+              <p class="text">وسایل آموزشی را کشف کنید</p>
+            </div>
+          </div>
+          <div class="left d-flex align-items-center justify-content-center">
+            <div class="age-selection">
+              <p class="title">سن</p>
+              <select name="سن" id="custom" class="custom">
+                <option selected="" disabled="">انتخاب کنید</option>
+                <option value="3 سال">۳ سال</option>
+                <option value="5 سال">۵ سال</option>
+                <option value="8 سال">۸ سال</option>
+                <option value="10سال">۱۰ سال</option>
+              </select>
+              <i class="icon icon-Down"></i>
+            </div>
+            <div class="skill-selection">
+              <p class="title">نوع مهارت</p>
+              <select name="سن" id="custom" class="custom">
+                <option selected="" disabled="">انتخاب کنید</option>
+                <option value="مهندسی">مهندسی</option>
+                <option value="ریاضیات">ریاضیات</option>
+                <option value="علمی">علمی</option>
+                <option value="فناوری">فناوری</option>
+                <option value="هنری">هنری</option>
+              </select>
+              <i class="icon icon-Down"></i>
+            </div>
+            <div class="box-iconSearch d-flex align-items-center justify-content-center">
+              <i class="icon icon-Search"></i>
+            </div>
+          </div>
+        </div>
+        <div class="ages d-flex align-items-center justify-content-center">
+          <a href="#" class="link d-flex align-items-center justify-content-center flex-column">
+            <div class="box-image d-flex align-items-center justify-content-center">
+              <img src="/img/hero/objects1.svg" class="img" alt="avatar">
+            </div>
+            <p class="text">تا ۱ سال</p>
+          </a>
+          <a href="#" class="link d-flex align-items-center justify-content-center flex-column">
+            <div class="box-image d-flex align-items-center justify-content-center">
+              <img src="/img/hero/objects2.svg" class="img" alt="avatar">
+            </div>
+            <p class="text">۱ تا ۳ سال</p>
+          </a>
+          <a href="#" class="link d-flex align-items-center justify-content-center flex-column">
+            <div class="box-image d-flex align-items-center justify-content-center">
+              <img src="/img/hero/objects3.svg" class="img" alt="avatar">
+            </div>
+            <p class="text">۳ تا ۵ سال</p>
+          </a>
+          <a href="#" class="link d-flex align-items-center justify-content-center flex-column">
+            <div class="box-image d-flex align-items-center justify-content-center">
+              <img src="/img/hero/objects4.svg" class="img" alt="avatar">
+            </div>
+            <p class="text">۵ تا ۸ سال</p>
+          </a>
+          <a href="#" class="link d-flex align-items-center justify-content-center flex-column">
+            <div class="box-image d-flex align-items-center justify-content-center">
+              <img src="/img/hero/objects5.svg" class="img" alt="avatar">
+            </div>
+            <p class="text">۸ تا ۱۲ سال</p>
+          </a>
+          <a href="#" class="link d-flex align-items-center justify-content-center flex-column">
+            <div class="box-image d-flex align-items-center justify-content-center">
+              <img src="/img/hero/objects6.svg" class="img" alt="avatar">
+            </div>
+            <p class="text">بالای ۱۲ سال</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="/main.js"></script>
+  <script type="module" src="/src/js/pages/home/hero.js"></script>
+</body>
+
 </html>

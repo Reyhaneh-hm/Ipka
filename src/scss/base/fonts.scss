@@ -6,3 +6,101 @@
   font-weight: 900;
   src: url("/fonts/woff/Dana-Medium.woff") format('woff'), url("/fonts/woff2/Dana-Medium.woff2") format('woff2');
 }
+
+
+/*-----------Icomoon------------*/
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icon/icomoon.eot?nyrold');
+  src: url('/fonts/icon/icomoon.eot?nyrold#iefix') format('embedded-opentype'),
+    url('/fonts/icon/icomoon.ttf?nyrold') format('truetype'),
+    url('/fonts/icon/icomoon.woff?nyrold') format('woff'),
+    url('/fonts/icon/icomoon.svg?nyrold#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Instagram:before {
+  content: "\e905";
+}
+
+.icon-Left:before {
+  content: "\e906";
+}
+
+.icon-Linkedin:before {
+  content: "\e907";
+}
+
+.icon-Play:before {
+  content: "\e908";
+}
+
+.icon-Search:before {
+  content: "\e909";
+}
+
+.icon-Star:before {
+  content: "\e90a";
+}
+
+.icon-Telegram:before {
+  content: "\e90b";
+}
+
+.icon-Aparat:before {
+  content: "\e90c";
+}
+
+.icon-berthday:before {
+  content: "\e90d";
+}
+
+.icon-Down:before {
+  content: "\e90e";
+}
+
+.icon-Facebook:before {
+  content: "\e90f";
+}
+
+.icon-Ring:before {
+  content: "\e900";
+}
+
+.icon-Vector:before {
+  content: "\e901";
+}
+
+.icon-Card:before {
+  content: "\e902";
+}
+
+.icon-Logo::after {
+  content: "\e903";
+  color: rgb(11, 87, 208);
+}
+
+.icon-Logo::before {
+  content: "\e904";
+  margin-left: -0.9375em;
+  color: rgb(255, 191, 0);
+}

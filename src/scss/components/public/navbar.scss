@@ -1,0 +1,121 @@
+.navbar {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0 0 20px -15px #000;
+
+    .card {
+        .right {
+            gap: 45px;
+
+            .box-logo {
+                width: 32px;
+                height: 35px;
+
+                .icon {
+                    font-size: 35px;
+                    display: flex;
+                }
+            }
+
+            .menu {
+                gap: 30px;
+
+                .item {
+                    .link {
+                        font-size: 15px;
+                        color: #3D3C45;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            color: #ffbf00;
+                        }
+                    }
+                }
+            }
+        }
+
+        .left {
+            gap: 25px;
+
+            .box-search {
+                position: relative;
+
+                .icon {
+                    position: absolute;
+                    top: 12px;
+                    right: 15px;
+                    font-size: 16px;
+                    color: #707070;
+                }
+
+                .input-search {
+                    background: #F3F7FE;
+                    border: 0;
+                    padding: 10px 40px 10px 20px;
+                    border-radius: 20px;
+                    height: 40px;
+                    width: 352px;
+                    font-size: 14px;
+                    color: #707070;
+                }
+            }
+
+            .access {
+                gap: 24px;
+
+                .link {
+                    width: 25px;
+                    height: 25px;
+
+
+                    .icon {
+                        font-size: 27px;
+                        color: #3D3C45;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            color: #ffbf00;
+                        }
+                    }
+
+                    #vector {
+                        font-size: 21px;
+                    }
+
+                    #card {
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            width: 7px;
+                            height: 7px;
+                            border-radius: 50px;
+                            display: block;
+                            position: absolute;
+                            right: -1px;
+                            top: 12px;
+                            background: #EB4235;
+                        }
+                    }
+                }
+            }
+
+            .user {
+                width: 40px;
+                height: 40px;
+                overflow: hidden;
+                border-radius: 50px;
+                cursor: pointer;
+
+                .img-user {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
