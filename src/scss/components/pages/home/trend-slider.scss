@@ -1,0 +1,136 @@
+.trend-slider {
+    margin-top: 60px;
+
+    .card {
+        gap: 25px;
+
+        .tab-content {
+            .filter {
+                gap: 10px;
+                width: 90%;
+                overflow-x: auto;
+                white-space: nowrap;
+                padding-bottom: 10px;
+                padding-left: 2px;
+                margin-bottom: -10px;
+
+                &::-webkit-scrollbar-track {
+                    padding: 2px 0;
+                    background-color: #f6f6f6;
+                }
+
+                &::-webkit-scrollbar {
+                    width: 1px;
+                    height: 3px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 10px;
+                    background-color: #c1c8d5;
+                }
+
+                .item {
+                    color: #3D3C45;
+                    font-size: 15px;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    border: 1px solid #E9EEF6;
+                    cursor: pointer;
+
+                    &.active {
+                        background: #3D3C45;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .all-product {
+                color: #0B57D0;
+                cursor: pointer;
+                font-size: 15px;
+                transition: all 0.3s;
+
+                &:hover {
+                    color: #3D3C45;
+                }
+
+                .icon {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .slider {
+            gap: 16px;
+            width: 100%;
+            overflow: hidden;
+
+            .item {
+                width: 394px !important;
+                height: 295px;
+                gap: 10px;
+
+                .box-image {
+                    width: 394px;
+                    height: 240px;
+
+                    .img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .content {
+                    padding-inline: 10px;
+
+                    .top {
+                        margin-bottom: 12px;
+
+                        .title {
+                            color: #3D3C45;
+                            font-size: 15px;
+                        }
+
+                        .money {
+                            color: #3D3C45;
+                            font-size: 15px;
+
+                            .toman {
+                                color: #ABB5C6;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        .score {
+                            font-size: 13px;
+                            color: #ABB5C6;
+
+                            .icon {
+                                font-size: 12px;
+                                color: #3D3C45;
+                            }
+                        }
+
+                        .gender {
+                            font-size: 13px;
+                            color: #ABB5C6;
+                            gap: 5px;
+
+                            .age {
+                                font-size: 13px;
+                                color: #ABB5C6;
+                            }
+
+                            .icon {
+                                font-size: 15px;
+                                color: #3D3C45;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -10,15 +10,17 @@
 
 <body>
 
+  <!--------------Header---------------->
+
   <header class="navbar d-flex align-items-center justify-content-center">
     <div class="container">
       <div class="row">
         <div class="card d-flex align-items-center justify-content-between">
-          <div class="right d-flex align-items-center justify-content-center">
+          <div class="right d-flex align-items-center justify-content-start">
             <a href="./index.html" class="box-logo">
               <i class="icon icon-Logo d-flex"></i>
             </a>
-            <ul class="menu d-flex align-items-center justify-content-center">
+            <ul class="menu d-flex align-items-center justify-content-start">
               <li class="item">
                 <a href="#" class="link">دسته بندی محصولات:</a>
               </li>
@@ -56,7 +58,7 @@
               </a>
             </div>
             <div class="user">
-              <img src="./public/images/Avatar.png" class="img-user" alt="avatar">
+              <img src="/images/Avatar.png" class="img-user" alt="avatar">
             </div>
           </div>
         </div>
@@ -64,9 +66,11 @@
     </div>
   </header>
 
+  <!------------------------------------>
+
   <section class="hero">
     <div class="slider">
-      <img src="/img/hero/Slider.png" class="img" alt="image slider">
+      <img src="/img/home/hero/Slider.png" class="img" alt="image slider">
     </div>
     <div class="container">
       <div class="row card justify-content-center">
@@ -91,7 +95,7 @@
             </div>
             <div class="skill-selection">
               <p class="title">نوع مهارت</p>
-              <select name="سن" id="custom" class="custom">
+              <select name="مهارت" id="custom2" class="custom">
                 <option selected="" disabled="">انتخاب کنید</option>
                 <option value="مهندسی">مهندسی</option>
                 <option value="ریاضیات">ریاضیات</option>
@@ -109,37 +113,37 @@
         <div class="ages d-flex align-items-center justify-content-center">
           <a href="#" class="link d-flex align-items-center justify-content-center flex-column">
             <div class="box-image d-flex align-items-center justify-content-center">
-              <img src="/img/hero/objects1.svg" class="img" alt="avatar">
+              <img src="/img/home/hero/objects1.svg" class="img" alt="avatar">
             </div>
             <p class="text">تا ۱ سال</p>
           </a>
           <a href="#" class="link d-flex align-items-center justify-content-center flex-column">
             <div class="box-image d-flex align-items-center justify-content-center">
-              <img src="/img/hero/objects2.svg" class="img" alt="avatar">
+              <img src="/img/home/hero/objects2.svg" class="img" alt="avatar">
             </div>
             <p class="text">۱ تا ۳ سال</p>
           </a>
           <a href="#" class="link d-flex align-items-center justify-content-center flex-column">
             <div class="box-image d-flex align-items-center justify-content-center">
-              <img src="/img/hero/objects3.svg" class="img" alt="avatar">
+              <img src="/img/home/hero/objects3.svg" class="img" alt="avatar">
             </div>
             <p class="text">۳ تا ۵ سال</p>
           </a>
           <a href="#" class="link d-flex align-items-center justify-content-center flex-column">
             <div class="box-image d-flex align-items-center justify-content-center">
-              <img src="/img/hero/objects4.svg" class="img" alt="avatar">
+              <img src="/img/home/hero/objects4.svg" class="img" alt="avatar">
             </div>
             <p class="text">۵ تا ۸ سال</p>
           </a>
           <a href="#" class="link d-flex align-items-center justify-content-center flex-column">
             <div class="box-image d-flex align-items-center justify-content-center">
-              <img src="/img/hero/objects5.svg" class="img" alt="avatar">
+              <img src="/img/home/hero/objects5.svg" class="img" alt="avatar">
             </div>
             <p class="text">۸ تا ۱۲ سال</p>
           </a>
           <a href="#" class="link d-flex align-items-center justify-content-center flex-column">
             <div class="box-image d-flex align-items-center justify-content-center">
-              <img src="/img/hero/objects6.svg" class="img" alt="avatar">
+              <img src="/img/home/hero/objects6.svg" class="img" alt="avatar">
             </div>
             <p class="text">بالای ۱۲ سال</p>
           </a>
@@ -148,8 +152,178 @@
     </div>
   </section>
 
+  <section class="trend-slider">
+    <div class="container">
+      <div class="row card d-flex align-items-center justify-content-center flex-column">
+        <div class="tab-content d-flex align-items-center justify-content-between">
+          <div class="filter d-flex align-items-center justify-content-start">
+            <div tab_content_title="item1" class="item active">ترند ها</div>
+            <div tab_content_title="item2" class="item">جدیدترین ها</div>
+            <div tab_content_title="item3" class="item">محبوب ها</div>
+          </div>
+          <p class="all-product">
+            همه محصولات
+            <i class="icon icon-Left"></i>
+          </p>
+        </div>
+        <div class="slider d-flex align-items-start justify-content-center">
+          <a href="#" tab_content_item="item1" class="swiper-slide item d-flex flex-column">
+            <div class="box-image">
+              <img src="/img/home/trend-slider/Pic1.png" class="img" alt="image-slider">
+            </div>
+            <div class="content">
+              <div class="top d-flex align-items-center justify-content-between">
+                <h2 class="title">ترازوی چوبی</h2>
+                <p class="money">۳,۴۸۰,۰۰۰ <span class="toman">تومان</span></p>
+              </div>
+              <div class="bottom d-flex align-items-center justify-content-between">
+                <span class="score">
+                  ۴.۴
+                  <i class="icon icon-Star"></i>
+                </span>
+                <p class="gender d-flex align-items-center">
+                  دخترانه - پسرانه
+                  <span class="age">۱-۲ سال</span>
+                  <i class="icon icon-berthday"></i>
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="#" tab_content_item="item1" class="swiper-slide item d-flex flex-column">
+            <div class="box-image">
+              <img src="/img/home/trend-slider/Pic2.png" class="img" alt="image-slider">
+            </div>
+            <div class="content">
+              <div class="top d-flex align-items-center justify-content-between">
+                <h2 class="title">ترازوی چوبی</h2>
+                <p class="money">۳,۴۸۰,۰۰۰ <span class="toman">تومان</span></p>
+              </div>
+              <div class="bottom d-flex align-items-center justify-content-between">
+                <span class="score">
+                  ۴.۴
+                  <i class="icon icon-Star"></i>
+                </span>
+                <p class="gender d-flex align-items-center">
+                  دخترانه - پسرانه
+                  <span class="age">۱-۲ سال</span>
+                  <i class="icon icon-berthday"></i>
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="#" tab_content_item="item1" class="swiper-slide item d-flex flex-column">
+            <div class="box-image">
+              <img src="/img/home/trend-slider/Pic3.png" class="img" alt="image-slider">
+            </div>
+            <div class="content">
+              <div class="top d-flex align-items-center justify-content-between">
+                <h2 class="title">ترازوی چوبی</h2>
+                <p class="money">۳,۴۸۰,۰۰۰ <span class="toman">تومان</span></p>
+              </div>
+              <div class="bottom d-flex align-items-center justify-content-between">
+                <span class="score">
+                  ۴.۴
+                  <i class="icon icon-Star"></i>
+                </span>
+                <p class="gender d-flex align-items-center">
+                  دخترانه - پسرانه
+                  <span class="age">۱-۲ سال</span>
+                  <i class="icon icon-berthday"></i>
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="#" tab_content_item="item1" class="swiper-slide item d-flex flex-column">
+            <div class="box-image">
+              <img src="/img/home/trend-slider/Pic4.png" class="img" alt="image-slider">
+            </div>
+            <div class="content">
+              <div class="top d-flex align-items-center justify-content-between">
+                <h2 class="title">ترازوی چوبی</h2>
+                <p class="money">۳,۴۸۰,۰۰۰ <span class="toman">تومان</span></p>
+              </div>
+              <div class="bottom d-flex align-items-center justify-content-between">
+                <span class="score">
+                  ۴.۴
+                  <i class="icon icon-Star"></i>
+                </span>
+                <p class="gender d-flex align-items-center">
+                  دخترانه - پسرانه
+                  <span class="age">۱-۲ سال</span>
+                  <i class="icon icon-berthday"></i>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-skills">
+    <div class="container">
+      <div class="row card d-flex align-items-center justify-content-center flex-column">
+        <h3 class="title">بهترین نسخه‌ی خودت رو بساز!</h3>
+        <div class="gallery d-flex align-items-center justify-content-center">
+          <a href="#" class="link d-flex justify-content-center">
+            <span class="desc">حیوانات</span>
+            <img src="/public/img/home/gallery-skills/11.jpg" class="img" alt="img">
+          </a>
+          <a href="#" class="link d-flex justify-content-center">
+            <span class="desc">رانندگی</span>
+            <img src="/public/img/home/gallery-skills/22.jpg" class="img" alt="img">
+          </a>
+          <a href="#" class="link d-flex justify-content-center">
+            <span class="desc">حل مسئله</span>
+            <img src="/public/img/home/gallery-skills/33.jpg" class="img" alt="img">
+          </a>
+          <a href="#" class="link d-flex justify-content-center">
+            <span class="desc">تفننی</span>
+            <img src="/public/img/home/gallery-skills/44.jpg" class="img" alt="img">
+          </a>
+          <a href="#" class="link d-flex justify-content-center">
+            <span class="desc">برج سازی</span>
+            <img src="/public/img/home/gallery-skills/55.jpg" class="img" alt="img">
+          </a>
+          <a href="#" class="link d-flex justify-content-center">
+            <span class="desc">معماری</span>
+            <img src="/public/img/home/gallery-skills/66.jpg" class="img" alt="img">
+          </a>
+          <a href="#" class="link d-flex justify-content-center">
+            <span class="desc">غصه گویی</span>
+            <img src="/public/img/home/gallery-skills/77.jpg" class="img" alt="img">
+          </a>
+          <div class="shadow">
+            <img src="/img/home/gallery-skills/Ellipse 2.svg" class="img" alt="shadow">
+          </div>
+          <img src="/img/home/gallery-skills/Group1.svg" class="group other1" alt="other">
+          <img src="/img/home/gallery-skills/Group2.svg" class="group other2" alt="other">
+          <img src="/img/home/gallery-skills/Group 3.svg" class="group other3" alt="other">
+          <img src="/img/home/gallery-skills/Group 4.svg" class="group other4" alt="other">
+          <img src="/img/home/gallery-skills/Group 5.svg" class="group other5" alt="other">
+          <img src="/img/home/gallery-skills/Group 6.svg" class="group other6" alt="other">
+          <img src="/img/home/gallery-skills/Group 7.svg" class="group other7" alt="other">
+          <img src="/img/home/gallery-skills/Vector.svg" class="group other8" alt="other">
+          <img src="/img/home/gallery-skills/Vector2.svg" class="group other9" alt="other">
+          <img src="/img/home/gallery-skills/Vector3.svg" class="group other10" alt="other">
+          <img src="/img/home/gallery-skills/Vector4.svg" class="group other11" alt="other">
+          <img src="/img/home/gallery-skills/Vector5.svg" class="group other12" alt="other">
+
+        </div>
+        <div class="content d-flex align-items-center justify-content-center flex-column">
+          <p class="text">مهارت‌هایی که آینده‌ات رو می‌سازند، همین حالا کشف کن و تقویت کن! انتخاب کن و گامی به سوی
+            پیشرفت بردار!</p>
+          <div class="btn d-flex align-items-center justify-content-center">
+            <a href="#" class="link sugges d-flex align-items-center justify-content-center">محصولات پیشنهادی</a>
+            <a href="#" class="link help d-flex align-items-center justify-content-center">بیشتر بدانید</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script type="module" src="/main.js"></script>
-  <script type="module" src="/src/js/pages/home/hero.js"></script>
+  <script type="module" src="/src/js/pages/home/index.js"></script>
 </body>
 
 </html>

@@ -3,13 +3,14 @@
     height: 70px;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 10;
     background: #fff;
     box-shadow: 0 0 20px -15px #000;
 
     .card {
         .right {
             gap: 45px;
+            width: 60%;
 
             .box-logo {
                 width: 32px;
@@ -23,6 +24,26 @@
 
             .menu {
                 gap: 30px;
+                overflow-x: auto;
+                white-space: nowrap;
+                padding-bottom: 10px;
+                padding-left: 2px;
+                margin-bottom: -10px;
+
+                &::-webkit-scrollbar-track {
+                    padding: 2px 0;
+                    background-color: #f6f6f6;
+                }
+
+                &::-webkit-scrollbar {
+                    width: 1px;
+                    height: 3px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 10px;
+                    background-color: #c1c8d5;
+                }
 
                 .item {
                     .link {
@@ -61,6 +82,11 @@
                     width: 352px;
                     font-size: 14px;
                     color: #707070;
+                    transition: all 0.3s;
+
+                    &:focus {
+                        box-shadow: 0 0 11px -4px #00000029;
+                    }
                 }
             }
 

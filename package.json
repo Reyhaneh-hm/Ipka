@@ -13,6 +13,9 @@
     "vite-plugin-inspect": "^11.0.0"
   },
   "dependencies": {
-    "sass": "^1.85.1"
+    "jquery": "^3.7.1",
+    "sass": "^1.85.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.4"
   }
 }

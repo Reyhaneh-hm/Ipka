@@ -103,6 +103,11 @@
                     background: #3D3C45;
                     border-radius: 10px;
                     cursor: pointer;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        background: #45444e;
+                    }
 
                     .icon {
                         font-size: 30px;
@@ -125,6 +130,11 @@
                     height: 90px;
                     border-radius: 50px;
                     background: #F3F7FE;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        background: #ffbf00;
+                    }
 
                     .img {
                         width: 85%;
