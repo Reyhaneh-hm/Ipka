@@ -1,53 +1,13 @@
-.trend-slider {
-    margin-top: 60px;
+.slider-previBuy {
+    margin-top: 180px;
 
     .card {
         gap: 25px;
 
         .tab-content {
-            .filter {
-                gap: 10px;
-                width: 90%;
-                overflow-x: auto;
-                white-space: nowrap;
-                padding-bottom: 10px;
-                padding-left: 2px;
-                margin-bottom: -10px;
-
-                &::-webkit-scrollbar-track {
-                    padding: 2px 0;
-                    background-color: #f6f6f6;
-                }
-
-                &::-webkit-scrollbar {
-                    width: 1px;
-                    height: 3px;
-                }
-
-                &::-webkit-scrollbar-thumb {
-                    border-radius: 10px;
-                    background-color: #c1c8d5;
-                }
-
-                .item {
-                    color: #3D3C45;
-                    font-size: 15px;
-                    padding: 10px 20px;
-                    border-radius: 20px;
-                    border: 1px solid #E9EEF6;
-                    cursor: pointer;
-                    transition: all 0.3s;
-
-                    &.active {
-                        background: #3D3C45;
-                        color: #fff;
-                    }
-
-                    &:hover {
-                        background: #3D3C45;
-                        color: #fff;
-                    }
-                }
+            .text {
+                color: #3D3C45;
+                font-size: 16px;
             }
 
             .all-product {
@@ -70,14 +30,14 @@
             gap: 16px;
             width: 100%;
             overflow: hidden;
-            display: none !important;
+            // display: none !important;
 
             &.active {
                 display: flex !important;
             }
 
             .item {
-                width: 394px !important;
+                width: 394px;
                 height: 295px;
                 gap: 10px;
 
