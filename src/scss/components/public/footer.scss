@@ -37,6 +37,19 @@
 
         .left {
             gap: 20px;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 2px;
+                height: 90%;
+                background: #EAF1FB;
+                display: block;
+                position: absolute;
+                right: -40px;
+                top: 10px;
+                border-radius: 10px;
+            }
 
             .text {
                 color: #3D3C45;

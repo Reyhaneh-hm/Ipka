@@ -5,6 +5,14 @@
     margin-top: 180px;
 
     .card {
+        @media screen and (max-width: 1440px) {
+            width: 48%;
+        }
+
+        @media screen and (max-width: 1024px) {
+            width: 39.5%;
+        }
+
         width: 52%;
         padding: 20px;
         gap: 35px;
@@ -13,10 +21,22 @@
             width: 100%;
 
             .filter {
+                @media screen and (max-width: 1440px) {
+                    width: 77%;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    width: 65%;
+                }
+
                 gap: 10px;
                 width: 85%;
 
                 .text {
+                    @media screen and (max-width: 1024px) {
+                        width: 85px;
+                    }
+
                     font-size: 15px;
                     color: #3D3C45;
                     width: 70px;
@@ -29,7 +49,7 @@
                     white-space: nowrap;
                     padding-bottom: 10px;
                     padding-left: 2px;
-                    margin-bottom: -10px;
+                    margin-bottom: -15px;
 
                     &::-webkit-scrollbar-track {
                         padding: 2px 0;
@@ -72,6 +92,7 @@
                 color: #0B57D0;
                 cursor: pointer;
                 font-size: 15px;
+                width: 110px;
                 transition: all 0.3s;
 
                 &:hover {
@@ -105,18 +126,21 @@
                 .slick-track {
                     height: 380px !important;
                     margin-right: 10px !important;
-                    padding-right: 15px !important;
                 }
             }
 
             .item {
+                @media screen and (max-width: 1440px) {
+                    margin-inline: 11px;
+                }
+
                 width: 305px !important;
                 min-height: 360px;
                 gap: 10px;
                 padding: 10px;
                 background-color: #fff;
                 border-radius: 8px;
-                margin-inline: 7.5px;
+                margin-inline: 7px;
 
                 .image-slider {
                     width: 285px;
@@ -195,9 +219,18 @@
     }
 
     .box-image {
-        width: 800px;
-        height: 100%;
+        @media screen and (max-width: 1440px) {
+            max-width: 700px;
+        }
 
+        @media screen and (max-width: 1024px) {
+            max-width: 595px;
+        }
+
+        width: 100%;
+        max-width: 800px;
+        min-width: 320px;
+        height: 100%;
 
         .img {
             width: 100%;

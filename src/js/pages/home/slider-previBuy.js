@@ -14,5 +14,23 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         infinite: true,
+        responsive: [
+            {
+                breakpoint: 1441,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: true,
+                    centerPadding: '10px',
+                }
+            },
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true,
+                    centerPadding: '65px',
+                }
+            }
+        ]
     });
 });

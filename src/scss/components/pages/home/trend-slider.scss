@@ -6,6 +6,10 @@
 
         .tab-content {
             .filter {
+                @media screen and (max-width: 1024px) {
+                    width: 85%;
+                }
+
                 gap: 10px;
                 width: 90%;
                 overflow-x: auto;
@@ -54,6 +58,7 @@
                 color: #0B57D0;
                 cursor: pointer;
                 font-size: 15px;
+                width: 110px;
                 transition: all 0.3s;
 
                 &:hover {
@@ -86,15 +91,14 @@
 
                 .slick-track {
                     height: 300px !important;
-                    padding-right: 15px !important;
                 }
             }
 
             .item {
-                width: 394px !important;
+                width: 394px;
                 height: 295px;
                 gap: 10px;
-                margin-inline: 7.9px;
+                margin-inline: 8px;
 
                 .box-image {
                     width: 394px;
