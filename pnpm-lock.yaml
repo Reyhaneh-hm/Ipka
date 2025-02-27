@@ -14,9 +14,15 @@ importers:
       sass:
         specifier: ^1.85.1
         version: 1.85.1
+      slick:
+        specifier: ^1.12.2
+        version: 1.12.2
       slick-carousel:
         specifier: ^1.8.1
         version: 1.8.1(jquery@3.7.1)
+      slick-slider:
+        specifier: ^1.8.2
+        version: 1.8.2
       swiper:
         specifier: ^11.2.4
         version: 11.2.4
@@ -531,6 +537,12 @@ packages:
     peerDependencies:
       jquery: '>=1.8.0'
 
+  slick-slider@1.8.2:
+    resolution: {integrity: sha512-/NGT7QzlC1/LNu198ad+rM8xJcgSXgiptUPbY0oMmtZ/8K2G9s6mMpLo7um6FIIQ135vUjsnP2gWY5DKJe2qJw==}
+
+  slick@1.12.2:
+    resolution: {integrity: sha512-4qdtOGcBjral6YIBCWJ0ljFSKNLz9KkhbWtuGvUyRowl1kxfuE1x/Z/aJcaiilpb3do9bl5K7/1h9XC5wWpY/A==}
+
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -993,6 +1005,10 @@ snapshots:
   slick-carousel@1.8.1(jquery@3.7.1):
     dependencies:
       jquery: 3.7.1
+
+  slick-slider@1.8.2: {}
+
+  slick@1.12.2: {}
 
   source-map-js@1.2.1: {}
 

@@ -69,6 +69,49 @@
                         background: #fff;
                         padding: 5px;
                     }
+
+                    .modal {
+                        display: none;
+                        position: fixed;
+                        z-index: 12 !important;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        -webkit-backdrop-filter: blur(15px);
+                        backdrop-filter: blur(15px);
+                        align-items: center;
+                        justify-content: center;
+                        padding: 70px 10px;
+                        margin-top: 70px;
+
+                        .close {
+                            color: #3D3C45;
+                            font-size: 52px;
+                            font-weight: 700;
+                            position: absolute;
+                            left: 40px;
+                            top: 20px;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                color: #ffbf00;
+                            }
+                        }
+
+                        video#modalVideo {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 15px;
+                            height: 100%;
+                            max-height: max-content;
+                            min-height: auto;
+                            width: 100%;
+                            max-width: max-content;
+                            min-width: auto;
+                        }
+                    }
                 }
             }
 

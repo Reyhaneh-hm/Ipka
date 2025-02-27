@@ -36,10 +36,24 @@
                 display: flex !important;
             }
 
+            .slick-arrow {
+                display: none !important;
+            }
+
+            .draggable {
+                width: 100% !important;
+                height: 300px !important;
+
+                .slick-track {
+                    height: 300px !important;
+                }
+            }
+
             .item {
                 width: 394px;
                 height: 295px;
                 gap: 10px;
+                margin-inline: 7px;
 
                 .box-image {
                     width: 394px;

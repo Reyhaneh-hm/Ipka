@@ -94,13 +94,29 @@
                 display: flex !important;
             }
 
+            .slick-arrow {
+                display: none !important;
+            }
+
+            .draggable {
+                width: 100% !important;
+                height: 380px !important;
+
+                .slick-track {
+                    height: 380px !important;
+                    margin-right: 10px !important;
+                    padding-right: 15px !important;
+                }
+            }
+
             .item {
-                width: 305px;
+                width: 305px !important;
                 min-height: 360px;
                 gap: 10px;
                 padding: 10px;
                 background-color: #fff;
                 border-radius: 8px;
+                margin-inline: 7.5px;
 
                 .image-slider {
                     width: 285px;

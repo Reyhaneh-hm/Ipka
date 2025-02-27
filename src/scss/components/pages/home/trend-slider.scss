@@ -76,10 +76,25 @@
                 display: flex !important;
             }
 
+            .slick-arrow {
+                display: none !important;
+            }
+
+            .draggable {
+                width: 100% !important;
+                height: 300px !important;
+
+                .slick-track {
+                    height: 300px !important;
+                    padding-right: 15px !important;
+                }
+            }
+
             .item {
                 width: 394px !important;
                 height: 295px;
                 gap: 10px;
+                margin-inline: 7.9px;
 
                 .box-image {
                     width: 394px;
