@@ -100,6 +100,12 @@
                         .title {
                             color: #3D3C45;
                             font-size: 15px;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            -webkit-line-clamp: 1;
+                            width: 70%;
                         }
 
                         .money {
@@ -109,6 +115,7 @@
                             .toman {
                                 color: #ABB5C6;
                                 font-size: 13px;
+                                margin-right: 2px;
                             }
                         }
                     }

@@ -286,6 +286,7 @@
                     background: #F3F7FE;
                     color: #3D3C45;
                     transition: all 0.3s;
+                    font-size: 15px;
 
                     &:hover {
                         background: #3D3C45;
@@ -297,9 +298,10 @@
                     background: #3D3C45;
                     color: #F3F7FE;
                     transition: all 0.3s;
+                    font-size: 15px;
 
                     &:hover {
-                        background: #4d4c56;
+                        background: #55545e;
                     }
                 }
             }
