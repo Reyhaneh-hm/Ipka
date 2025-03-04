@@ -69,16 +69,22 @@
             .box-search {
                 position: relative;
 
-                .icon {
-                    @media screen and (max-width: 1024px) {
-                        display: none;
-                    }
-
+                .btn {
+                    border: 0;
+                    background: transparent;
                     position: absolute;
                     top: 12px;
                     right: 15px;
-                    font-size: 16px;
-                    color: #707070;
+                    cursor: pointer;
+
+                    .icon {
+                        @media screen and (max-width: 1024px) {
+                            display: none;
+                        }
+
+                        font-size: 16px;
+                        color: #707070;
+                    }
                 }
 
                 .input-search {
@@ -101,26 +107,50 @@
                     }
                 }
 
-                .input-search2 {
-                    height: 40px;
-                    width: 255px;
-                    padding: 15px 20px;
-                    border: 0;
-                    border-radius: 20px;
-                    background: #F3F7FE;
-                    color: #707070;
+                .form {
                     position: absolute;
-                    top: 15px;
-                    left: -75px;
-                    font-size: 14px;
+                    top: 35px;
+                    right: 0;
                     visibility: hidden;
                     opacity: 0;
                     z-index: 4;
-                    box-shadow: 0 0 11px -4px #00000029;
                     transition: all 0.3s;
 
+                    .input-search2 {
+                        height: 40px;
+                        width: 255px;
+                        padding: 10px 20px 10px 40px;
+                        border: 0;
+                        border-radius: 20px;
+                        background: #F3F7FE;
+                        color: #707070;
+                        font-size: 14px;
+                        box-shadow: 0 0 11px -4px #00000029;
+                        transition: all 0.3s;
+                    }
+
+                    .btnSearch {
+                        border: 0;
+                        background: transparent;
+                        position: absolute;
+                        top: 10px;
+                        left: 12px;
+
+                        .icon-Left {
+                            color: #3D3C45;
+                            font-size: 16px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                color: #ffbf00;
+                            }
+                        }
+                    }
+
                     &.active {
-                        top: 25px;
+                        top: 30px;
                         visibility: visible;
                         opacity: 1;
                     }

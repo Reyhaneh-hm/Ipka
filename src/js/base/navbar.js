@@ -1,8 +1,8 @@
-import '../../scss/components/public/navbar.scss';
+// import '../../scss/components/public/navbar.scss';
 
 /*-----------------------show search-box------------------------*/
 const searchButton = document.getElementById('search');
-const inputSearch = document.querySelector('.input-search2');
+const inputSearch = document.querySelector('#form');
 const overlay = document.querySelector('.overlay');
 
 function toggleSearchBox() {
