@@ -2,7 +2,7 @@
 
 /*-----------------------show search-box------------------------*/
 const searchButton = document.getElementById('search');
-const inputSearch = document.querySelector('#form');
+const inputSearch = document.querySelector('#box-search2');
 const overlay = document.querySelector('.overlay');
 
 function toggleSearchBox() {

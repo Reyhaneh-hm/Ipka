@@ -13,22 +13,26 @@
             .list {
 
                 .title {
-                    color: #3D3C45 !important;
-                    font-size: 16px;
-                    font-weight: bold;
-                    margin-bottom: 12px !important;
+                    .text {
+                        color: #3D3C45 !important;
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-bottom: 12px !important;
+                    }
                 }
 
                 .item {
                     margin-bottom: 10px;
 
                     .link {
-                        color: #ABB5C6;
-                        font-size: 15px;
-                        transition: all 0.3s;
+                        .text {
+                            color: #ABB5C6;
+                            font-size: 15px;
+                            transition: all 0.3s;
 
-                        &:hover {
-                            color: #ffbf00;
+                            &:hover {
+                                color: #ffbf00;
+                            }
                         }
                     }
                 }
@@ -84,10 +88,15 @@
                     padding: 10px;
                     padding-right: 70px;
                     font-size: 13px;
+                    color: #3D3C45;
                     border: 2px solid #3D3C45;
                     border-radius: 8px;
                     height: 45px;
                     width: 256px;
+
+                    &:focus::placeholder {
+                        color: transparent;
+                    }
                 }
             }
 
