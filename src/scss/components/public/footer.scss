@@ -1,4 +1,10 @@
+@import '../../base/variables.scss';
+
 .footer {
+    @media screen and (max-width: 768px) {
+        display: none !important;
+    }
+
     background: #F8FAFD;
     margin-top: 180px;
     height: 330px;
@@ -14,7 +20,7 @@
 
                 .title {
                     .text {
-                        color: #3D3C45 !important;
+                        color: $main3 !important;
                         font-size: 16px;
                         font-weight: bold;
                         margin-bottom: 12px !important;
@@ -31,7 +37,7 @@
                             transition: all 0.3s;
 
                             &:hover {
-                                color: #ffbf00;
+                                color: $main1;
                             }
                         }
                     }
@@ -56,7 +62,7 @@
             }
 
             .text {
-                color: #3D3C45;
+                color: $main3;
                 font-size: 15px;
             }
 
@@ -64,8 +70,8 @@
                 position: relative;
 
                 .input-submit {
-                    background: #3D3C45;
-                    color: #fff;
+                    background: $main3;
+                    color: $white;
                     border: 0;
                     border-radius: 8px;
                     position: absolute;
@@ -88,8 +94,8 @@
                     padding: 10px;
                     padding-right: 70px;
                     font-size: 13px;
-                    color: #3D3C45;
-                    border: 2px solid #3D3C45;
+                    color: $main3;
+                    border: 2px solid $main3;
                     border-radius: 8px;
                     height: 45px;
                     width: 256px;
@@ -122,12 +128,12 @@
 
 
                     .icon {
-                        color: #3D3C45;
+                        color: $main3;
                         font-size: 28px;
                         transition: all 0.3s;
 
                         &:hover {
-                            color: #ffbf00;
+                            color: $main1;
                         }
                     }
                 }

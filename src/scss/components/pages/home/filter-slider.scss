@@ -1,3 +1,5 @@
+@import '../../../base/variables.scss';
+
 .filter-slider {
     width: 100%;
     min-height: 470px;
@@ -38,7 +40,7 @@
                     }
 
                     font-size: 15px;
-                    color: #3D3C45;
+                    color: $main3;
                     width: 70px;
                 }
 
@@ -67,36 +69,36 @@
                     }
 
                     .item {
-                        color: #3D3C45;
+                        color: $main3;
                         font-size: 14px;
                         padding: 8px 18px;
                         border-radius: 20px;
-                        border: 1px solid #3D3C45;
+                        border: 1px solid $main3;
                         cursor: pointer;
                         transition: all 0.3s;
 
                         &.active {
-                            background: #3D3C45;
-                            color: #fff;
+                            background: $main3;
+                            color: $white;
                         }
 
                         &:hover {
-                            background: #3D3C45;
-                            color: #fff;
+                            background: $main3;
+                            color: $white;
                         }
                     }
                 }
             }
 
             .all-product {
-                color: #0B57D0;
+                color: $main2;
                 cursor: pointer;
                 font-size: 15px;
                 width: 110px;
                 transition: all 0.3s;
 
                 &:hover {
-                    color: #3D3C45;
+                    color: $main1;
                 }
 
                 .icon {
@@ -138,7 +140,7 @@
                 min-height: 360px;
                 gap: 10px;
                 padding: 10px;
-                background-color: #fff;
+                background-color: $white;
                 border-radius: 8px;
                 margin-inline: 7px;
 
@@ -164,7 +166,7 @@
                         margin-bottom: 12px;
 
                         .title {
-                            color: #3D3C45;
+                            color: $main3;
                             font-size: 15px;
                             display: -webkit-box;
                             -webkit-box-orient: vertical;
@@ -175,7 +177,7 @@
                         }
 
                         .money {
-                            color: #3D3C45;
+                            color: $main3;
                             font-size: 15px;
 
                             .toman {
@@ -193,7 +195,7 @@
 
                             .icon {
                                 font-size: 10px;
-                                color: #3D3C45;
+                                color: $main3;
                             }
                         }
 
@@ -209,7 +211,7 @@
 
                             .icon {
                                 font-size: 15px;
-                                color: #3D3C45;
+                                color: $main3;
                             }
                         }
                     }

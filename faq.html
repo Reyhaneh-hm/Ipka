@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/navbar/Logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سوالات متداول</title>
+</head>
+
+<body>
+
+    <!--------------Header---------------->
+    <div class="overlay"></div>
+    <header class="navbar d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="card d-flex align-items-center justify-content-between">
+                    <div class="right d-flex align-items-center justify-content-start">
+                        <a href="./index.html" class="box-logo">
+                            <i class="icon icon-Logo d-flex"></i>
+                        </a>
+                        <ul class="menu d-flex align-items-center justify-content-start">
+                            <li class="item">
+                                <a href="#" class="link">دسته بندی محصولات:</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">علمی</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">ریاضی</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">هنری</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">مهندسی</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">فناوری</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left d-flex align-items-center justify-content-center">
+                        <form action="" class="box-search">
+                            <button type="submit" class="btn">
+                                <i class="icon icon-Search"></i>
+                            </button>
+                            <input type="search" class="input-search" placeholder="جستجو...">
+
+                            <div class="box-search2" id="box-search2">
+                                <input type="search" class="input-search2" placeholder="جستجو...">
+                                <button type="submit" class="btnSearch">
+                                    <i class="icon-Left"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="access d-flex align-items-center justify-content-center">
+                            <a href="#" class="link d-flex align-items-center justify-content-center">
+                                <i class="icon icon-Search" id="search"></i>
+                            </a>
+                            <a href="#" class="link d-flex align-items-center justify-content-center">
+                                <i class="icon icon-Vector" id="vector"></i>
+                            </a>
+                            <a href="#" class="link d-flex align-items-center justify-content-center">
+                                <i class="icon icon-Card" id="card"></i>
+                                <span class="number">۹۹</span>
+                            </a>
+                            <a href="#" class="link d-flex align-items-center justify-content-center">
+                                <i class="icon icon-Ring" id="ring"></i>
+                            </a>
+                        </div>
+                        <div class="user">
+                            <img src="/images/navbar/Avatar.png" class="img-user" alt="avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--------------Section---------------->
+
+    <section class="FAQ">
+
+        <ul class="breadcrumb container">
+            <li><a href="./index.html">صفحه اصلی</a></li>
+            <li>سوالات متداول</li>
+        </ul>
+
+        <div class="container">
+            <div class="row card">
+                <div class="faq-header col-12 d-flex flex-column justify-content-center align-items-center">
+                    <h3 class="titr-search text-center">سلام، چطور می‌توانیم کمکتان کنیم؟</h3>
+
+                    <div class="input-wrapper col-lg-6 col-11 d-flex align-items-center">
+                        <span id="basic-addon1" class="box-icon d-flex justify-content-center align-items-center">
+                            <i class="icon icon-search2"></i>
+                        </span>
+                        <input class="input-search" type="text" placeholder="یک سوال جستجو کنید ..." aria-label="Search"
+                            aria-describedby="basic-addon1">
+                    </div>
+
+                    <p class="text-search">
+                        یا یک دسته برای یافتن سریع کمکی که نیاز دارید انتخاب کنید
+                    </p>
+                </div>
+
+                <div class="faq-body d-flex justify-content-center align-items-center">
+                    <div class="content-faq col-lg-9 col-12 d-flex justify-content-center">
+                        <div class="categories col-lg-3 col-md-4 col-12">
+                            <div class="nav d-flex align-items-start justify-content-center flex-column">
+                                <button class="nav-link active" data-tab="tab1">
+                                    <i class="icon icon-card gx-left-10"></i>
+                                    <span class="text-navItem">پرداخت</span>
+                                </button>
+                                <button class="nav-link" data-tab="tab2">
+                                    <i class="icon icon-Card gx-left-10"></i>
+                                    <span class="text-navItem">ارسال</span>
+                                </button>
+                                <button class="nav-link" data-tab="tab3">
+                                    <i class="icon icon-arrow-back gx-left-10"></i>
+                                    <span class="text-navItem">انصراف و مرجوعی</span>
+                                </button>
+                                <button class="nav-link" data-tab="tab4">
+                                    <i class="icon icon-box gx-left-10"></i>
+                                    <span class="text-navItem">سفارشات من</span>
+                                </button>
+                                <button class="nav-link" data-tab="tab5">
+                                    <i class="icon icon-setting gx-left-10"></i>
+                                    <span class="text-navItem">محصول و خدمات</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="questions p-inline p-md-0 col-lg-9 col-md-8 col-12">
+
+                            <div class="item active" id="tab1">
+                                <div class="titr gy-bottom-10 d-flex align-items-center">
+                                    <span class="box-icon d-flex justify-content-center align-items-center">
+                                        <i class="icon icon-card"></i>
+                                    </span>
+                                    <div class="info">
+                                        <h5 class="title gy-bottom-10">پرداخت</h5>
+                                        <span class="desc">دریافت راهنمایی برای پرداخت</span>
+                                    </div>
+                                </div>
+
+                                <div class="accordion">
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between active"
+                                            type="button">
+                                            چه زمانی برای سفارش من پرداخت می شود؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+
+                                        <div class="accordion-body active">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                                        </div>
+                                    </div>
+
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between"
+                                            type="button">
+                                            چگونه هزینه سفارش خود را پرداخت کنم؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                                            کاربردهای
+                                        </div>
+                                    </div>
+
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between"
+                                            type="button">
+                                            اگر در ثبت سفارش با مشکل مواجه شوم چه باید بکنم؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها
+                                            <a href="javascript:void(0);">لورم ایپسوم متن</a> لورم ایپسوم متن
+                                            ساختگی با تولید سادگی
+                                            <strong>۱-۰۰۰-۰۰۰-۰۰۰ </strong>لورم ایپسوم متن ساختگی
+                                            <a href="javascript:void(0);">order@companymail.com</a>
+                                        </div>
+                                    </div>
+
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between"
+                                            type="button">
+                                            برای محصول نهایی به کدام
+                                            مجوز نیاز دارم؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                                            لورم ایپسوم متن ساختگی با تولید سادگی
+                                        </div>
+                                    </div>
+
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between"
+                                            type="button">
+                                            آیا اشتراک من به طور خودکار تمدید می شود؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item" id="tab2">
+                                <div class="titr gy-bottom-10 d-flex align-items-center">
+                                    <span class="box-icon d-flex justify-content-center align-items-center">
+                                        <i class="icon icon-Card"></i>
+                                    </span>
+                                    <div class="info">
+                                        <h5 class="title gy-bottom-10">ارسال</h5>
+                                        <span class="desc">دریافت راهنمایی برای ارسال</span>
+                                    </div>
+                                </div>
+
+                                <div class="accordion">
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between active"
+                                            type="button">
+                                            چگونه سفارش من را ارسال می کنید؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body active">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                                        </div>
+                                    </div>
+
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between"
+                                            type="button">
+                                            هزینه ارسال سفارش من چقدر است؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                                        </div>
+                                    </div>
+
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between"
+                                            type="button">
+                                            اگر محصول من آسیب دیده به دستم برسد چه باید کرد؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها
+                                            <a href="javascript:void(0);">لورم ایپسوم متن</a> لورم ایپسوم متن
+                                            ساختگی با تولید سادگی
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item" id="tab3">
+                                <div class="titr gy-bottom-10 d-flex align-items-center">
+                                    <span class="box-icon d-flex justify-content-center align-items-center">
+                                        <i class="icon icon-arrow-back"></i>
+                                    </span>
+                                    <div class="info">
+                                        <h5 class="title gy-bottom-10">انصراف و مرجوعی</h5>
+                                        <span class="desc">دریافت راهنمایی برای انصراف و مرجوعی</span>
+                                    </div>
+                                </div>
+
+                                <div class="accordion">
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between active"
+                                            type="button">
+                                            چه زمانی برای سفارش من پرداخت می شود؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body active">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                                        </div>
+                                    </div>
+
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between"
+                                            type="button">
+                                            چگونه هزینه سفارش خود را پرداخت کنم؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                                            کاربردهای
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item" id="tab4">
+                                <div class="titr gy-bottom-10 d-flex align-items-center">
+                                    <span class="box-icon d-flex justify-content-center align-items-center">
+                                        <i class="icon icon-box"></i>
+                                    </span>
+                                    <div class="info">
+                                        <h5 class="title gy-bottom-10">سفارشات من</h5>
+                                        <span class="desc">دریافت راهنمایی برای سفارشات من</span>
+                                    </div>
+                                </div>
+
+                                <div class="accordion">
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between active"
+                                            type="button">
+                                            اگر در ثبت سفارش با مشکل مواجه شوم چه باید بکنم؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body active">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها
+                                            <a href="javascript:void(0);">لورم ایپسوم متن</a> لورم ایپسوم متن
+                                            ساختگی با تولید سادگی
+                                            <strong>۱-۰۰۰-۰۰۰-۰۰۰</strong>لورم ایپسوم متن ساختگی
+                                            <a href="javascript:void(0);">order@companymail.com</a>
+                                        </div>
+                                    </div>
+
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between"
+                                            type="button">
+                                            برای محصول نهایی به کدام
+                                            مجوز نیاز دارم؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                                        </div>
+                                    </div>
+
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between"
+                                            type="button">
+                                            آیا اشتراک من به طور خودکار تمدید می شود؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item" id="tab5">
+                                <div class="titr gy-bottom-10 d-flex align-items-center">
+                                    <span class="box-icon d-flex justify-content-center align-items-center">
+                                        <i class="icon icon-setting"></i>
+                                    </span>
+                                    <div class="info">
+                                        <h5 class="title gy-bottom-10">محصول و خدمات</h5>
+                                        <span class="desc">دریافت راهنمایی برای محصول و خدمات</span>
+                                    </div>
+                                </div>
+
+                                <div class="accordion">
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between active"
+                                            type="button">
+                                            چگونه هزینه سفارش خود را پرداخت کنم؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body active">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                                            کاربردهای
+                                        </div>
+                                    </div>
+
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between"
+                                            type="button">
+                                            اگر در ثبت سفارش با مشکل مواجه شوم چه باید بکنم؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها
+                                            <a href="javascript:void(0);">لورم ایپسوم متن</a> لورم ایپسوم متن
+                                            ساختگی با تولید سادگی
+                                            <strong>۱-۰۰۰-۰۰۰-۰۰۰</strong>لورم ایپسوم متن ساختگی
+                                            <a href="javascript:void(0);">order@companymail.com</a>
+                                        </div>
+                                    </div>
+
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between"
+                                            type="button">
+                                            برای محصول نهایی به کدام
+                                            مجوز نیاز دارم؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                                        </div>
+                                    </div>
+
+                                    <div filte_item class="accordion-item">
+                                        <button
+                                            class="accordion-header d-flex align-items-center justify-content-between"
+                                            type="button">
+                                            آیا اشتراک من به طور خودکار تمدید می شود؟
+                                            <i class="icon icon-arrow_down2"></i>
+                                        </button>
+                                        <div class="accordion-body">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+                                            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!---------------Footer---------------->
+
+    <footer class="footer d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="card d-flex align-items-center justify-content-center">
+                <div class="lists d-flex justify-content-center">
+                    <ul class="list">
+                        <li class="item title">
+                            <h5 class="text">
+                                همراه با ایپکا
+                            </h5>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">
+                                <h6 class="text">
+                                    تماس با ایپکا
+                                </h6>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">
+                                <h6 class="text">
+                                    درباره ایپکا
+                                </h6>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li class="item title">
+                            <h5 class="text">
+                                خدمات مشتریان
+                            </h5>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">
+                                <h6 class="text">
+                                    پرسش های متداول
+                                </h6>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">
+                                <h6 class="text">
+                                    رویه بازگشت کالا
+                                </h6>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">
+                                <h6 class="text">
+                                    شرایط استفاده
+                                </h6>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">
+                                <h6 class="text">
+                                    حریم خصوصی
+                                </h6>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">
+                                <h6 class="text">
+                                    قوانین و مقررات
+                                </h6>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li class="item title">
+                            <h5 class="text">
+                                راهنمای خرید از ایپکا
+                            </h5>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">
+                                <h6 class="text">
+                                    نحوه ثبت سفارش
+                                </h6>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">
+                                <h6 class="text">
+                                    روش های ارسال
+                                </h6>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">
+                                <h6 class="text">
+                                    شیوه پرداخت
+                                </h6>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="left d-flex flex-column">
+                    <p class="text">عضویت در خبرنامه ایپکا</p>
+                    <label for="inputEmail" class="label d-flex align-items-center justify-content-center">
+                        <input type="submit" class="input-submit" name="submit" id="inputSubmit" value="ثبت">
+                        <input type="email" class="input-email" name="email" id="inputEmail"
+                            placeholder="YourName@Mail.com">
+                    </label>
+                    <div class="box-image d-flex align-items-center">
+                        <a href="#" class="link">
+                            <img src="/images/footer/Frame.svg" class="img" alt="image">
+                        </a>
+                        <a href="#" class="link">
+                            <img src="/images/footer/Path.svg" class="img" alt="image">
+                        </a>
+                    </div>
+                    <div class="social-networks d-flex align-items-center">
+                        <a href="#" class="link">
+                            <i class="icon icon-Instagram"></i>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon icon-Telegram"></i>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon icon-Aparat"></i>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon icon-Linkedin"></i>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon icon-Facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/src/js/pages/faq/faq.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,4 @@
+@import '../../../base/variables.scss';
 // @keyframes moveDesc {
 //     0% {
 //         transform: translateY(-65px);
@@ -15,7 +16,7 @@
         .title {
             text-align: center;
             font-size: 22px;
-            color: #3D3C45;
+            color: $main3;
         }
 
         .gallery {
@@ -36,7 +37,7 @@
                     position: absolute;
                     transform: translateY(0px);
                     background: #66A989;
-                    color: #fff;
+                    color: $white;
                     padding: 7px;
                     border-radius: 16px;
                     font-size: 14px;
@@ -266,7 +267,7 @@
 
             .text {
                 font-size: 15px;
-                color: #3D3C45;
+                color: $main3;
                 line-height: 1.5;
                 text-align: justify;
             }
@@ -283,18 +284,18 @@
 
                 .sugges {
                     background: #F3F7FE;
-                    color: #3D3C45;
+                    color: $main3;
                     transition: all 0.3s;
                     font-size: 15px;
 
                     &:hover {
-                        background: #3D3C45;
+                        background: $main3;
                         color: #F3F7FE;
                     }
                 }
 
                 .help {
-                    background: #3D3C45;
+                    background: $main3;
                     color: #F3F7FE;
                     transition: all 0.3s;
                     font-size: 15px;

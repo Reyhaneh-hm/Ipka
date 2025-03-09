@@ -12,11 +12,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src: url('/fonts/icon/icomoon.eot?nyrold');
-  src: url('/fonts/icon/icomoon.eot?nyrold#iefix') format('embedded-opentype'),
-    url('/fonts/icon/icomoon.ttf?nyrold') format('truetype'),
-    url('/fonts/icon/icomoon.woff?nyrold') format('woff'),
-    url('/fonts/icon/icomoon.svg?nyrold#icomoon') format('svg');
+  src: url('/fonts/icon/icomoon.eot?agiqg9');
+  src: url('/fonts/icon/icomoon.eot?agiqg9#iefix') format('embedded-opentype'),
+    url('/fonts/icon/icomoon.ttf?agiqg9') format('truetype'),
+    url('/fonts/icon/icomoon.woff?agiqg9') format('woff'),
+    url('/fonts/icon/icomoon.svg?agiqg9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -36,6 +36,42 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow_up2:before {
+  content: "\e915";
+}
+
+.icon-arrow_right2:before {
+  content: "\e916";
+}
+
+.icon-arrow_left2:before {
+  content: "\e917";
+}
+
+.icon-arrow_down2:before {
+  content: "\e918";
+}
+
+.icon-box:before {
+  content: "\e911";
+}
+
+.icon-search2:before {
+  content: "\e914";
+}
+
+.icon-setting:before {
+  content: "\e910";
+}
+
+.icon-arrow-back:before {
+  content: "\e912";
+}
+
+.icon-card:before {
+  content: "\e913";
 }
 
 .icon-Instagram:before {

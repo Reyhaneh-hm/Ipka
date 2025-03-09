@@ -1,0 +1,234 @@
+@import '../../../base/variables.scss';
+
+.FAQ {
+    .card {
+        margin-block: 120px;
+        overflow: hidden;
+
+        .faq-header {
+            background-color: #f5f7fa;
+            min-height: 330px;
+            border-radius: 10px;
+
+            .titr-search {
+                @media screen and (max-width: 425px) {
+                    font-size: 20px;
+                }
+
+                color: $main3;
+                font-size: 25px;
+            }
+
+            .input-wrapper {
+                background-color: $white;
+                min-height: 50px;
+                border-radius: 10px;
+                margin: 40px 0 25px;
+                padding: 15px 20px;
+                border: 2px solid $white;
+                box-shadow: 0 0 15px -15px $block;
+                transition: all 0.3s;
+
+                .box-icon {
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 15px;
+
+                    .icon {
+                        font-size: 18px;
+                        color: $text;
+                    }
+                }
+
+                .input-search {
+                    color: $text;
+                    width: 100%;
+                    height: 100%;
+                    border: 0;
+                    outline: none;
+                    flex: 1;
+                    font-size: 14px;
+                }
+
+                &:focus-within {
+                    border: 2px solid $main2;
+                }
+            }
+
+            .text-search {
+                color: $main3;
+                font-size: 16px;
+                text-align: center;
+                line-height: 1.5;
+            }
+        }
+
+        .faq-body {
+            margin-block: 50px;
+
+            .content-faq {
+                @media screen and (max-width: 425px) {
+                    flex-direction: column;
+                }
+
+                .categories {
+                    margin-left: 20px;
+                    margin-bottom: 45px;
+
+                    .nav {
+                        min-height: 100px;
+                        width: 100%;
+
+                        .nav-link {
+                            width: 100%;
+                            border-radius: 10px;
+                            border: 0;
+                            background: transparent;
+                            padding: 15px;
+                            text-align: right;
+                            cursor: pointer;
+                            color: $main3;
+                            transition: all 0.3s;
+
+                            .icon {
+                                font-size: 20px;
+                                margin-left: 10px;
+                            }
+
+                            .icon-Card {
+                                font-size: 22px;
+                            }
+
+                            .icon-arrow-back {
+                                font-size: 18px;
+                                margin-left: 13px;
+                            }
+
+                            .text-navItem {
+                                font-size: 15px;
+                            }
+
+                            &.active {
+                                box-shadow: 0 0.125rem 0.25rem rgba(147, 158, 170, 0.4);
+                                background: $main2;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+
+                .questions {
+                    .item {
+                        display: none;
+                        transition: all 0.3s;
+
+                        .titr {
+                            gap: 20px;
+
+                            .box-icon {
+                                background: #f5f7fa;
+                                color: $main2;
+                                border-radius: 10px;
+                                width: 50px;
+                                height: 50px;
+
+                                .icon {
+                                    font-size: 23px;
+                                }
+
+                                .icon-Card {
+                                    font-size: 25px;
+                                }
+
+                                .icon-arrow-back {
+                                    font-size: 21px;
+                                }
+                            }
+
+                            .info {
+
+                                .title {
+                                    font-size: 18px;
+                                    color: $main3;
+                                }
+
+                                .desc {
+                                    font-size: 15px;
+                                    color: $text;
+                                }
+                            }
+                        }
+
+                        .accordion {
+                            margin-top: 20px;
+
+                            .accordion-item {
+                                box-shadow: 0 0.25rem 1rem rgba(147, 158, 170, 0.45);
+                                background: $white;
+                                margin-bottom: 10px;
+                                border-radius: 10px;
+                                transition: all 0.3s;
+
+                                .accordion-header {
+                                    color: $main3;
+                                    padding: 20px;
+                                    text-align: right;
+                                    cursor: pointer;
+                                    background: transparent;
+                                    width: 100%;
+                                    height: 100%;
+                                    font-size: 16px;
+                                    line-height: 1.5;
+                                    border: 0;
+                                    border: none;
+                                    transition: all 0.3s;
+
+                                    .icon {
+                                        font-size: 17px;
+                                        font-weight: bold;
+                                        color: $main3;
+                                        transition: all 0.3s;
+                                    }
+
+                                    &.active {
+                                        color: $main2;
+
+                                        .icon {
+                                            color: $main2;
+                                            transform: rotate(180deg);
+                                        }
+                                    }
+                                }
+
+
+                                .accordion-body {
+                                    padding: 0 15px;
+                                    line-height: 2;
+                                    font-size: 15px;
+                                    color: $text;
+                                    overflow: hidden;
+                                    background: transparent;
+                                    border: 0;
+                                    transition: all 0.3s;
+                                    max-height: 0;
+
+                                    a {
+                                        color: $main2;
+                                    }
+
+                                    &.active {
+                                        padding: 0 15px 15px;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.active {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
