@@ -1,7 +1,5 @@
 @import '../../../base/variables.scss';
 
-/*------------Relationship Paage-------------*/
-
 .contactUs {
 
     .card {
@@ -119,6 +117,7 @@
 
                 .input_box {
                     margin-bottom: 15px;
+                    position: relative;
 
                     input,
                     select,
@@ -135,6 +134,20 @@
                         &:focus {
                             border: 2px solid $main3;
                         }
+                    }
+
+                    select {
+                        color: #9a9a9a;
+                        cursor: pointer;
+                        padding-left: 45px;
+                    }
+
+                    .icon {
+                        bottom: 15px;
+                        color: #a3a3a3;
+                        font-size: 20px;
+                        left: 15px;
+                        position: absolute;
                     }
 
                     textarea {
@@ -261,7 +274,7 @@
                         margin-inline: auto;
                         display: block;
                         border-radius: 10px;
-                        height: 333px;
+                        height: 500px;
                     }
                 }
             }

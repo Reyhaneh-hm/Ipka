@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-feature-settings: "ss02";
 }
 
 .overlay {
@@ -15,6 +16,20 @@
     position: fixed;
     visibility: hidden;
     z-index: 2;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.overlay2 {
+    background: rgba(0, 0, 0, .55);
+    inset: 0;
+    opacity: 0;
+    position: fixed;
+    visibility: hidden;
+    z-index: 5;
 
     &.active {
         opacity: 1;

@@ -22,3 +22,29 @@ overlay.addEventListener('click', () => {
     overlay.classList.remove('active');
 });
 
+/*-----------------------show filterProduct------------------------*/
+
+document.addEventListener("DOMContentLoaded", function () {
+    const filterIcon = document.getElementById("filter");
+    const filterModal = document.querySelector(".filterProduct");
+    const overlay = document.createElement("div");
+
+    overlay.classList.add("overlay2");
+    document.body.appendChild(overlay);
+
+    filterIcon.addEventListener("click", function () {
+        if (filterModal.classList.contains("active")) {
+            filterModal.classList.remove("active");
+            overlay.classList.remove("active");
+        } else {
+            filterModal.classList.add("active");
+            overlay.classList.add("active");
+        }
+    });
+
+    overlay.addEventListener("click", function () {
+        filterModal.classList.remove("active");
+        overlay.classList.remove("active");
+    });
+});
+
