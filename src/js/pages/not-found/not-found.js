@@ -1,0 +1,1 @@
+import '../../../scss/components/pages/not-found/index.scss';
