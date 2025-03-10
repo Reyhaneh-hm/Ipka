@@ -24,7 +24,7 @@ ul.breadcrumb {
 
   li {
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     color: $main2;
 
     &+li:before {
@@ -43,4 +43,3 @@ ul.breadcrumb {
     }
   }
 }
-
