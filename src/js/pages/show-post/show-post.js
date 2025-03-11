@@ -1,0 +1,1 @@
+import '../../../scss/components/pages/show-post/index.scss';
