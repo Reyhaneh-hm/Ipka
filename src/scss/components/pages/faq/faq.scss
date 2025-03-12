@@ -7,7 +7,7 @@
 
         .faq-header {
             background-color: #f5f7fa;
-            min-height: 330px;
+            min-height: 290px;
             border-radius: 10px;
 
             .titr-search {
@@ -20,6 +20,7 @@
             }
 
             .input-wrapper {
+                display: none !important;
                 background-color: $white;
                 min-height: 50px;
                 border-radius: 10px;
@@ -56,10 +57,11 @@
             }
 
             .text-search {
-                color: $main3;
-                font-size: 16px;
+                color: $text;
+                font-size: 15px;
                 text-align: center;
                 line-height: 1.5;
+                margin-block: 15px
             }
         }
 
