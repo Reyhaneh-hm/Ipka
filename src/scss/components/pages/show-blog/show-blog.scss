@@ -5,9 +5,10 @@
         margin-block: 150px;
 
         .post {
-            background-color: #fbfbfb;
+            // background-color: #fbfbfb;
+            border: $border;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 12px;
 
             .head {
 
@@ -36,7 +37,7 @@
                     height: 550px;
                     object-fit: cover;
                     margin-bottom: 20px;
-                    border-radius: 10px;
+                    border-radius: 12px;
                     overflow: hidden;
 
                     .image {
@@ -57,7 +58,8 @@
 
                     &::-webkit-scrollbar-track {
                         padding: 2px 0;
-                        background-color: #f6f6f6;
+                        border: $border;
+                        // background-color: #f6f6f6;
                     }
 
                     &::-webkit-scrollbar {
@@ -66,16 +68,17 @@
                     }
 
                     &::-webkit-scrollbar-thumb {
-                        border-radius: 10px;
-                        background-color: #c1c8d5;
+                        border-radius: 12px;
+                        border: $border;
+                        // background-color: #c1c8d5;
                     }
 
                     .grouping {
                         transition: all 0.3s;
                         color: #707070;
-                        padding: 3px 10px;
-                        border-radius: 5px;
-                        background-color: #ebebeb;
+                        padding: 5px 15px;
+                        border-radius: 12px;
+                        background-color: #f1f1f1;
                         font-size: 12px;
                         margin-bottom: 10px;
                     }
@@ -106,7 +109,7 @@
                         width: 30px;
                         height: 30px;
                         vertical-align: middle;
-                        border-radius: 50%;
+                        border-radius: 50px;
                         display: inline-block;
 
                         .avatar {
@@ -137,8 +140,9 @@
                             content: "";
                             width: 4px;
                             height: 4px;
-                            background: $main1;
-                            border-radius: 50%;
+                            border: $border;
+                            // background: $main1;
+                            border-radius: 12px;
                             position: absolute;
                             top: 50%;
                             margin-top: -2px;
@@ -194,7 +198,7 @@
                         width: 410px;
                         height: 315px;
                         object-fit: cover;
-                        border-radius: 10px;
+                        border-radius: 12px;
                         overflow: hidden;
 
                         .img {
@@ -283,12 +287,15 @@
                     height: 425px;
                     position: sticky;
                     top: 120px;
-                    background-color: #fbfbfb;
+                    border: $border;
+                    // background-color: #fbfbfb;
                     padding: 15px;
-                    border-radius: 10px;
+                    border-radius: 12px;
 
                     .input_box {
                         margin-bottom: 15px;
+                        border: $border;
+                        border-radius: 12px;
 
                         input:focus-visible,
                         textarea:focus-visible {
@@ -304,7 +311,7 @@
                             border: 2px solid $white;
                             transition: all 0.3s;
                             padding: 15px 12px;
-                            border-radius: 10px;
+                            border-radius: 12px;
                         }
 
                         textarea {
@@ -316,8 +323,9 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            background-color: $white;
-                            border-radius: 10px;
+                            border: $border;
+                            // background-color: $white;
+                            border-radius: 12px;
                             width: max-content;
                             margin-inline: auto;
 
@@ -347,7 +355,7 @@
                         border: 0;
                         color: $white;
                         font-size: 15px;
-                        border-radius: 10px;
+                        border-radius: 12px;
                         transition: all 0.3s;
 
                         &:hover {
@@ -367,8 +375,9 @@
                     margin-right: 10px;
 
                     .comment_item {
-                        background-color: #fbfbfb;
-                        border-radius: 10px;
+                        border: $border;
+                        // background-color: #fbfbfb;
+                        border-radius: 12px;
                         padding: 20px;
                         margin-bottom: 30px;
 
@@ -385,7 +394,7 @@
 
 
                                 .box-userImage {
-                                    border-radius: 50%;
+                                    border-radius: 50px;
                                     width: 30px;
                                     height: 30px;
 

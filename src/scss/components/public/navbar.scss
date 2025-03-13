@@ -9,7 +9,7 @@
     top: 0;
     z-index: 10;
     background: $white;
-    box-shadow: 0 0 20px -15px $block;
+    border: $border;
 
     .card {
         .right {
@@ -101,7 +101,7 @@
                     }
 
                     background: #F3F7FE;
-                    border: 0;
+                    border: 1px solid #F3F7FE;
                     padding: 10px 40px 10px 20px;
                     border-radius: 20px;
                     height: 40px;
@@ -111,7 +111,7 @@
                     transition: all 0.3s;
 
                     &:focus {
-                        box-shadow: 0 0 11px -4px #00000029;
+                        border: $border;
 
                         &::placeholder {
                             color: transparent;
@@ -137,7 +137,6 @@
                         background: #F3F7FE;
                         color: $text;
                         font-size: 14px;
-                        box-shadow: 0 0 11px -4px #00000029;
                         transition: all 0.3s;
 
                         &:focus::placeholder {
@@ -211,14 +210,17 @@
                     }
 
                     #search {
-                        @media screen and (max-width: 1024px) {
-                            display: block;
-                        }
-
-                        display: none;
                         font-size: 24px;
                         margin-top: 1px;
                     }
+                }
+
+                #link-searchBox {
+                    @media screen and (max-width: 1024px) {
+                        display: block !important;
+                    }
+
+                    display: none !important;
                 }
 
                 #filter {

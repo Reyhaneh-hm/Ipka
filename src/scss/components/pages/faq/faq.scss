@@ -6,9 +6,9 @@
         overflow: hidden;
 
         .faq-header {
-            background-color: #f5f7fa;
+            background-color: #F8FAFD;
             min-height: 290px;
-            border-radius: 10px;
+            border-radius: 12px;
 
             .titr-search {
                 @media screen and (max-width: 425px) {
@@ -23,7 +23,7 @@
                 display: none !important;
                 background-color: $white;
                 min-height: 50px;
-                border-radius: 10px;
+                border-radius: 12px;
                 margin: 40px 0 25px;
                 padding: 15px 20px;
                 border: 2px solid $white;
@@ -83,13 +83,14 @@
 
                         .nav-link {
                             width: 100%;
-                            border-radius: 10px;
+                            border-radius: 12px;
                             border: 0;
                             background: transparent;
                             padding: 15px;
                             text-align: right;
                             cursor: pointer;
                             color: $main3;
+                            border: 1px solid #fff;
                             transition: all 0.3s;
 
                             .icon {
@@ -111,9 +112,8 @@
                             }
 
                             &.active {
-                                box-shadow: 0 0.125rem 0.25rem rgba(147, 158, 170, 0.4);
-                                background: $main2;
-                                color: $white;
+                                border: 1px solid $main2;
+                                color: $main2;
                             }
                         }
                     }
@@ -165,10 +165,10 @@
                             margin-top: 20px;
 
                             .accordion-item {
-                                box-shadow: 0 0.25rem 1rem rgba(147, 158, 170, 0.45);
                                 background: $white;
+                                border: $border;
                                 margin-bottom: 10px;
-                                border-radius: 10px;
+                                border-radius: 12px;
                                 transition: all 0.3s;
 
                                 .accordion-header {

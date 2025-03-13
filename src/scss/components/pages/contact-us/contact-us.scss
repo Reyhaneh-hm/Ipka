@@ -33,9 +33,10 @@
                 max-width: 400px;
                 min-width: 300px;
                 min-height: 280px;
-                background: #fbfbfb;
+                border: $border;
+                // background: #fbfbfb;
                 padding: 15px 20px;
-                border-radius: 15px;
+                border-radius: 12px;
                 overflow: hidden;
                 gap: 30px;
 
@@ -98,6 +99,9 @@
 
         .content-contactUs {
             margin-top: 50px;
+            gap: 15px;
+            padding: 0;
+            padding-left: 15px;
 
             .comment_form {
                 @media screen and (max-width: 768px) {
@@ -110,9 +114,10 @@
 
                 position: sticky;
                 top: 120px;
-                background-color: #fbfbfb;
+                border: $border;
+                // background-color: #fbfbfb;
                 padding: 15px;
-                border-radius: 15px;
+                border-radius: 12px;
                 height: max-content;
 
                 .input_box {
@@ -128,8 +133,9 @@
                         border: 2px solid $white;
                         transition: all 0.3s;
                         padding: 15px 12px;
-                        border-radius: 10px;
-                        background-color: $white;
+                        border-radius: 12px;
+                        border: $border;
+                        // background-color: $white;
 
                         &:focus {
                             border: 2px solid $main3;
@@ -161,8 +167,9 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background-color: $white;
-                    border-radius: 10px;
+                    border: $border;
+                    // background-color: $white;
+                    border-radius: 12px;
                     width: max-content;
                     margin-inline: auto;
                     height: 50px;
@@ -192,7 +199,7 @@
                     color: $white;
                     font-size: 16px;
                     padding-block: 18px;
-                    border-radius: 10px;
+                    border-radius: 12px;
                     transition: all 0.3s;
 
 
@@ -203,10 +210,10 @@
             }
 
             .main_info {
-                background-color: #fbfbfb;
-                border-radius: 15px;
+                border: $border;
+                // background-color: #fbfbfb;
+                border-radius: 12px;
                 padding: 30px 20px;
-                margin-right: 10px;
 
                 .box {
                     .itemInfo {
@@ -273,7 +280,7 @@
                         width: 90%;
                         margin-inline: auto;
                         display: block;
-                        border-radius: 10px;
+                        border-radius: 12px;
                         height: 500px;
                     }
                 }
