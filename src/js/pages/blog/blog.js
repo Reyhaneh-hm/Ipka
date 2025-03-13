@@ -16,3 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
         [overlay, modalFilter].forEach((item) => item.classList.remove("active"));
     });
 });
+
+/*-------------active to btn-filter------------*/
+const buttons = document.querySelectorAll('.btn-filter');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function () {
+        document.querySelector('.btn-filter.active')?.classList.remove('active');
+        this.classList.add('active');
+    });
+});

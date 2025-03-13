@@ -1,3 +1,5 @@
+@import '../../base/variables.scss';
+
 /*---------------Public----------------*/
 * {
     box-sizing: border-box;
@@ -38,13 +40,15 @@
 }
 
 ::-moz-selection {
-    background: #cf5241;
-    color: #fff;
+    background: $main1;
+    color: $main3;
+    font-weight: bold;
 }
 
 ::selection {
-    background: #cf5241;
-    color: #fff;
+    background: $main1;
+    color: $main3;
+    font-weight: bold;
 }
 
 ::placeholder {

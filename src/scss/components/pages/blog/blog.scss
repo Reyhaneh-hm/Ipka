@@ -1,17 +1,300 @@
 @import "../../../base/variables.scss";
 
 /*-----------------section-blog--------------------*/
-.show-blog {
+.blog {
     .card {
-        margin-block: 170px;
+        margin-top: 120px;
         overflow: hidden;
 
-        .titr-showBlog {
+        .titr-blog {
             color: $main3;
             margin-bottom: 60px;
             font-size: 20px;
             font-weight: bold;
         }
+
+        .filter-blog {
+            width: 100%;
+            gap: 12px;
+
+            .text {
+                font-size: 16px;
+                color: $main3;
+                padding-bottom: 10px;
+                min-width: 45px;
+            }
+
+            .items {
+                gap: 8px;
+                overflow-x: auto;
+                white-space: nowrap;
+                padding-bottom: 10px;
+                padding-left: 2px;
+
+                &::-webkit-scrollbar-track {
+                    padding: 2px 0;
+                    background-color: #f6f6f6;
+                }
+
+                &::-webkit-scrollbar {
+                    width: 1px;
+                    height: 3px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 10px;
+                    background-color: #c1c8d5;
+                }
+
+                .btn-filter {
+                    padding: 8px 16px;
+                    border: 1px solid $main3;
+                    font-size: 14px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    transition: all 0.3s;
+
+                    &.active {
+                        background: $main3;
+                        color: $white;
+                    }
+
+                    &:hover {
+                        background: $main3;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .top {
+            margin-top: 20px;
+            gap: 30px;
+
+            .blog-item-holder {
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    min-height: 300px !important;
+                    height: auto;
+                }
+
+                width: 1115px;
+                height: 695px;
+                border: $border;
+                border-radius: 12px;
+                padding: 10px;
+
+                .img {
+                    width: 100%;
+                    object-fit: cover;
+                    aspect-ratio: 1 / 0.416;
+                    border-radius: 12px;
+                }
+
+                .content {
+                    @media screen and (max-width: 768px) {
+                        padding-inline: 8px;
+                    }
+
+                    width: 100%;
+                    gap: 20px;
+                    padding: 28px 30px 10px;
+
+                    .title {
+                        color: $main3;
+                        font-size: 20px;
+                        transition: all 0.3s;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 1;
+                    }
+
+                    .text {
+                        color: $text;
+                        font-size: 15px;
+                        line-height: 2;
+                        text-align: justify;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 3;
+                    }
+
+                    .bottom {
+                        gap: 20px;
+                        margin-top: 12px;
+
+                        .read {
+                            color: $text;
+                            font-size: 13px;
+
+                            .time {}
+                        }
+
+                        .score {
+                            color: $text;
+                            font-size: 13px;
+
+                            .icon {
+                                color: $main1;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .content {
+                        .title {
+                            color: $main1;
+                        }
+                    }
+                }
+            }
+
+            .blog-page-categories {
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 425px) {
+                    flex-direction: row !important;
+                    justify-content: flex-start !important;
+                    overflow-x: auto;
+                    padding-bottom: 10px;
+                }
+
+                width: 480px;
+                gap: 30px;
+
+                &::-webkit-scrollbar-track {
+                    padding: 2px 0;
+                    background-color: #f6f6f6;
+                }
+
+                &::-webkit-scrollbar {
+                    width: 1px;
+                    height: 3px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 10px;
+                    background-color: #c1c8d5;
+                }
+
+                .item {
+                    @media screen and (max-width: 768px) {
+                        width: 480px;
+                    }
+
+                    width: 100%;
+                    height: 212px;
+                    border: $border;
+                    border-radius: 12px;
+                    gap: 10px;
+                    padding: 10px;
+
+                    &:nth-child(1),
+                    &:nth-child(3) {
+                        @media screen and (max-width: 768px) {
+                            margin-left: auto;
+                            margin-right: 40px;
+                        }
+
+                        @media screen and (max-width: 425px) {
+                            margin-right: 0;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        @media screen and (max-width: 768px) {
+                            margin-right: auto;
+                            margin-left: 40px;
+                        }
+
+                        @media screen and (max-width: 425px) {
+                            margin-right: 0;
+                        }
+                    }
+
+                    .image {
+                        width: 180px;
+                        height: 100%;
+                        overflow: hidden;
+                        border-radius: 12px;
+
+                        .img {
+                            width: 100%;
+                            object-fit: cover;
+                            aspect-ratio: 1 / 1.15;
+                        }
+                    }
+
+                    .content {
+                        gap: 20px;
+                        width: 265px;
+
+                        .title {
+                            color: $main3;
+                            font-size: 16px;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            -webkit-line-clamp: 1;
+                            transition: all 0.3s;
+                        }
+
+                        .text {
+                            color: $text;
+                            font-size: 14px;
+                            line-height: 1.9;
+                            text-align: justify;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            -webkit-line-clamp: 3;
+                        }
+
+                        .bottom {
+                            gap: 20px;
+                            margin-top: 15px;
+                            width: 100%;
+
+                            .read {
+                                color: $text;
+                                font-size: 13px;
+
+                                .time {}
+                            }
+
+                            .score {
+                                color: $text;
+                                font-size: 13px;
+
+                                .icon {
+                                    color: $main1;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .content {
+                            .title {
+                                color: $main1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
 
         .blog {
             display: flex;
@@ -33,7 +316,7 @@
                         justify-content: space-between;
                         padding-block: 23px;
                         align-items: center;
-                        border-bottom: 1px solid #f1f1f1;
+                        border-bottom: $border;
                         margin-inline: 18px;
                         background-color: #fff;
                         cursor: pointer;
@@ -90,6 +373,10 @@
 
             .items-blog {
                 @media screen and (max-width: 1440px) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+
+                @media screen and (max-width: 768px) {
                     grid-template-columns: repeat(2, 1fr);
                 }
 
@@ -98,28 +385,26 @@
                 }
 
                 display: grid;
-                justify-items: end;
+                justify-items: center;
                 align-items: start;
                 grid-auto-rows: min-content;
                 grid-gap: 25px;
-                grid-template-columns: repeat(3, 1fr);
-                margin-top: 60px;
+                grid-template-columns: repeat(4, 1fr);
+                margin-top: 30px;
 
                 .itemBlog {
                     width: 100%;
                     min-width: 300px;
                     max-width: 380px;
-                    min-height: 430px;
-                    padding-inline: 5px;
-                    border-radius: 30px;
+                    min-height: 330px;
+                    padding: 10px;
+                    border-radius: 12px;
                     display: flex;
                     align-items: center;
                     flex-direction: column;
-                    background: #fbfbfb;
                     overflow: hidden;
                     margin-block: 5px;
-                    box-shadow: 0 0 20px -15px rgba(0, 0, 0, 0.6901960784);
-
+                    border: $border;
 
                     &:hover {
                         .textBox-blog {
@@ -131,31 +416,15 @@
                         }
                     }
 
-                    .box-imgBlog {
-                        @media screen and (max-width: 1024px) {
-                            height: 255px;
-                        }
-
-                        @media screen and (max-width: 320px) {
-                            height: 230px;
-                        }
-
-                        width: 98%;
-                        height: 290px;
-                        margin-top: 10px;
-                        border-radius: 20px 20px 0 0;
-                        overflow: hidden;
-
-                        .imgBlog {
-                            width: 100%;
-                            object-fit: cover;
-                            aspect-ratio: 1 / 0.8;
-                        }
+                    .imgBlog {
+                        width: 100%;
+                        object-fit: cover;
+                        aspect-ratio: 1 / 0.8;
+                        border-radius: 12px 12px 0 0;
                     }
 
                     .textBox-blog {
                         padding-inline: 10px;
-                        padding-bottom: 10px;
                         width: 100%;
 
                         .sarTitr-blog {
@@ -186,262 +455,59 @@
                             -webkit-box-orient: vertical;
                             overflow: hidden;
                             text-overflow: ellipsis;
-                            -webkit-line-clamp: 5;
+                            -webkit-line-clamp: 2;
                             margin-bottom: 20px;
                         }
 
-                        .linkBlog {
+                        .bottom {
                             display: flex;
                             align-items: center;
-                            gap: 5px;
-                            width: 100%;
-                            overflow-x: auto;
-                            white-space: nowrap;
-                            padding-bottom: 10px;
-
-                            &::-webkit-scrollbar-track {
-                                padding: 2px 0;
-                                background-color: #f6f6f6;
-                            }
-
-                            &::-webkit-scrollbar {
-                                width: 1px;
-                                height: 3px;
-                            }
-
-                            &::-webkit-scrollbar-thumb {
-                                border-radius: 10px;
-                                background-color: #c1c8d5;
-                            }
-
-                            .item-linkBlog {
-                                border-radius: 10px;
-                                padding: 8px 15px;
-                                display: flex;
-                                color: $text;
-                                background: #f2f2f2;
-                                justify-content: center;
-                                align-items: center;
-                                font-size: 12px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        .filter {
-            .filterBtn {
-                @media screen and (max-width: 425px) {
-                    width: 78%;
-                    transform: none !important;
-                }
-
-                @media screen and (max-width: 375px) {
-                    width: 89%;
-                    right: 20px;
-                }
-
-                @media screen and (max-width: 320px) {
-                    right: 12px;
-                    width: 92%;
-                }
-
-                position: relative;
-                top: 30px;
-                right: 45px;
-                width: 160px;
-                height: 50px;
-                text-align: center;
-                display: none;
-                cursor: pointer;
-                transform: translateX(30px);
-                transition: all 0.3s;
-
-                svg {
-                    @media screen and (max-width: 425px) {
-                        width: 100%;
-                    }
-
-                    .shape {
-                        @media screen and (max-width: 768px) {
-                            stroke-dasharray: 66 142;
-                            stroke-dashoffset: 80;
-                            width: 100%;
-                        }
-
-                        @media screen and (max-width: 425px) {
-                            stroke-dasharray: 65 295;
-                            stroke-dashoffset: -285;
-                        }
-
-                        @media screen and (max-width: 375px) {
-                            stroke-dasharray: 105 280;
-                            stroke-dashoffset: -260;
-                        }
-
-                        @media screen and (max-width: 320px) {
-                            stroke-dasharray: 30 290;
-                        }
-
-                        stroke-dasharray: 100 300;
-                        stroke-dashoffset: -297;
-                        fill: transparent;
-                        stroke: $main1;
-                        stroke-width: 5px;
-                        transition: stroke-width 1s,
-                        stroke-dashoffset 1s,
-                        stroke-dasharray 1s;
-                    }
-
-                }
-
-                .text {
-                    font-size: 17px;
-                    top: -42PX;
-                    position: relative;
-                    color: $main3;
-                }
-
-                &:hover {
-                    background-color: $main1;
-                    transition: 1s;
-                    transform: translateX(20px);
-
-                    svg {
-                        .shape {
-                            stroke-width: 2px;
-                            stroke-dashoffset: 0;
-                            stroke-dasharray: 760;
-                        }
-                    }
-
-                    .text {
-                        color: $main3;
-                        font-weight: bold;
-                    }
-                }
-            }
-
-            .modalFilter {
-                background-color: #f8fafe;
-                height: 83%;
-                width: 260px;
-                position: fixed;
-                right: 0;
-                top: 70px;
-                transform: translateX(30rem);
-                transition: all 0.3s;
-                z-index: 51;
-                overflow: hidden;
-
-                .box {
-                    height: 800px;
-                    padding-bottom: 125px;
-                    overflow-y: auto;
-                    direction: ltr;
-
-                    &::-webkit-scrollbar-track {
-                        padding: 2px 0;
-                        background-color: #e2e1e1;
-                        border-radius: 10px;
-                    }
-
-                    &::-webkit-scrollbar {
-                        width: 4px;
-                        border-radius: 10px;
-                    }
-
-                    &::-webkit-scrollbar-thumb {
-                        background-color: $main3;
-                        border-radius: 5px;
-                    }
-
-                    .itemSlider {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        padding-block: 23px;
-                        align-items: center;
-                        border-bottom: 1px solid #e9eef6;
-                        margin-inline: 18px;
-                        direction: rtl;
-                        background-color: #fbfbfb;
-                        cursor: pointer;
-
-                        &:last-child {
-                            border-bottom: unset;
-                        }
-
-                        &:hover {
-                            .link {
-
-                                .title,
-                                .icon {
-                                    color: $main3;
-                                }
-                            }
-                        }
-
-                        &.active {
-                            position: sticky;
-                            top: 0;
-                            border-color: $main3;
-
-                            .link {
-
-                                .title,
-                                .icon {
-                                    color: $main3;
-                                }
-                            }
-                        }
-
-                        .link {
-                            width: 100%;
-                            display: flex;
                             justify-content: space-between;
-                            align-items: center;
+                            gap: 10px;
 
-                            .title {
-                                color: #abb5c6;
-                                transition: all 0.3s;
-                                font-size: 15px;
-                            }
+                            .linkBlog {
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+                                overflow-x: auto;
+                                white-space: nowrap;
+                                padding-bottom: 10px;
 
-                            .icon {
-                                color: #abb5c6;
-                                transition: all 0.3s;
-                                width: 20px;
-                                font-size: 23px;
-                            }
-                        }
+                                &::-webkit-scrollbar-track {
+                                    padding: 2px 0;
+                                    background-color: #f6f6f6;
+                                }
 
-                        .submenu {
-                            overflow: hidden;
-                            max-height: 0;
-                            width: 100%;
-                            text-align: center;
-                            transition: max-height 0.3s ease;
+                                &::-webkit-scrollbar {
+                                    width: 1px;
+                                    height: 3px;
+                                }
 
-                            .item-submenu {
-                                padding: 12px;
-                                background-color: $main3;
-                                color: #fff;
-                                font-size: 13px;
-                                border-bottom: 2px solid;
-                                border-radius: 5px;
+                                &::-webkit-scrollbar-thumb {
+                                    border-radius: 10px;
+                                    background-color: #c1c8d5;
+                                }
 
-                                &:hover {
-                                    background-color: #515058;
+                                .item-linkBlog {
+                                    border-radius: 12px;
+                                    padding: 8px 15px;
+                                    display: flex;
+                                    color: $text;
+                                    background: #f2f2f2;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 12px;
                                 }
                             }
+
+                            .read {
+                                color: $text;
+                                font-size: 13px;
+                                padding-bottom: 10px;
+                            }
+
                         }
                     }
-                }
-
-                &.active {
-                    transform: translateX(0);
                 }
             }
         }
