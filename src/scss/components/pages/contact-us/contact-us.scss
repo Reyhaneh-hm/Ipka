@@ -130,11 +130,10 @@
                         width: 100%;
                         color: $main3;
                         font-size: 15px;
-                        border: 2px solid $white;
                         transition: all 0.3s;
                         padding: 15px 12px;
                         border-radius: 12px;
-                        border: $border;
+                        border: 2px solid #f1f1f1;
                         // background-color: $white;
 
                         &:focus {

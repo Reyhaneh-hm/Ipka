@@ -1,5 +1,21 @@
 @import '../../base/variables.scss';
 
+/*------------------keyframes-----------------*/
+
+@keyframes scaleAnimation {
+    0% {
+        transform: translateY(-1px);
+    }
+
+    50% {
+        transform: translateY(1px);
+    }
+
+    100% {
+        transform: translateY(-1px);
+    }
+}
+
 /*-------------------footer--------------------*/
 
 .footer {
@@ -157,28 +173,54 @@
     padding-block: 13px;
     z-index: 60;
     display: none;
-    box-shadow: 0 -4px 20px #00000026;
+    border: $border;
 
     .box {
-        justify-content: space-between;
-
         .link {
             text-align: center;
             width: 20%;
+            border-radius: 12px;
 
             .icon {
                 font-size: 25px;
+                transition: all 0.3s;
+                color: $main3;
             }
 
             .title {
-                @media screen and (max-width: 425px) {
-                    display: none;
-                }
-
-                display: block;
-                color: #757a83;
+                display: none;
+                color: $main3;
                 font-size: 12px;
                 margin-top: 3px;
+            }
+
+            &.active {
+                background: $main1;
+                height: 45px;
+                padding: 3px;
+                animation: scaleAnimation 1.8s infinite ease-in-out;
+
+                .icon {
+                    font-size: 22px;
+                }
+
+                .title {
+                    display: block;
+                }
+
+                .img-user {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+
+        .user {
+            .img-user {
+                width: 28px;
+                height: 28px;
+                border-radius: 50px;
+                cursor: pointer;
             }
         }
     }

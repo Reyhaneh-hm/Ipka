@@ -12,11 +12,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src: url('/fonts/icon/icomoon.eot?8zrl1k');
-  src: url('/fonts/icon/icomoon.eot?8zrl1k#iefix') format('embedded-opentype'),
-    url('/fonts/icon/icomoon.ttf?8zrl1k') format('truetype'),
-    url('/fonts/icon/icomoon.woff?8zrl1k') format('woff'),
-    url('/fonts/icon/icomoon.svg?8zrl1k#icomoon') format('svg');
+  src: url('/fonts/icon/icomoon.eot?prmts8');
+  src: url('/fonts/icon/icomoon.eot?prmts8#iefix') format('embedded-opentype'),
+    url('/fonts/icon/icomoon.ttf?prmts8') format('truetype'),
+    url('/fonts/icon/icomoon.woff?prmts8') format('woff'),
+    url('/fonts/icon/icomoon.svg?prmts8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -36,6 +36,18 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e921";
+}
+
+.icon-bag:before {
+  content: "\e935";
+}
+
+.icon-box:before {
+  content: "\e911";
 }
 
 .icon-Left-Arrow:before {
@@ -81,9 +93,7 @@
 .icon-building:before {
   content: "\e91b";
 }
-.icon-Building:before {
-  content: "\e91e";
-}
+
 .icon-Phone-call:before {
   content: "\e91c";
 }
@@ -182,10 +192,6 @@
 
 .icon-setting:before {
   content: "\e910";
-}
-
-.icon-box:before {
-  content: "\e911";
 }
 
 .icon-arrow-back:before {
