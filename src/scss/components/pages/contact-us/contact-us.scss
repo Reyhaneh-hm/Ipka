@@ -34,7 +34,6 @@
                 min-width: 300px;
                 min-height: 280px;
                 border: $border;
-                // background: #fbfbfb;
                 padding: 15px 20px;
                 border-radius: 12px;
                 overflow: hidden;
@@ -98,6 +97,10 @@
         }
 
         .content-contactUs {
+            @media screen and (max-width: 768px) {
+                padding-inline: 15px;
+            }
+
             margin-top: 50px;
             gap: 15px;
             padding: 0;
@@ -115,7 +118,6 @@
                 position: sticky;
                 top: 120px;
                 border: $border;
-                // background-color: #fbfbfb;
                 padding: 15px;
                 border-radius: 12px;
                 height: max-content;
@@ -134,7 +136,6 @@
                         padding: 15px 12px;
                         border-radius: 12px;
                         border: 2px solid #f1f1f1;
-                        // background-color: $white;
 
                         &:focus {
                             border: 2px solid $main3;
@@ -167,7 +168,6 @@
                     align-items: center;
                     justify-content: center;
                     border: $border;
-                    // background-color: $white;
                     border-radius: 12px;
                     width: max-content;
                     margin-inline: auto;
@@ -210,7 +210,6 @@
 
             .main_info {
                 border: $border;
-                // background-color: #fbfbfb;
                 border-radius: 12px;
                 padding: 30px 20px;
 

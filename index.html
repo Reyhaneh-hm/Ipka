@@ -245,12 +245,23 @@
   <!--------------Section---------------->
 
   <section class="hero">
-    <div class="slider">
-      <img src="/img/home/hero/Slider.png" class="img" alt="image slider">
+    <div class="image-hero d-md-none">
+      <img src="/img/home/hero/Slider.png" class="img" alt="image-hero">
+    </div>
+    <div class="slider d-md-flex" id="slider-hero">
+      <div class="item">
+        <img class="image" src="/img/home/hero/Slider.png" alt="imageHero">
+      </div>
+      <div class="item">
+        <img class="image" src="/img/home/hero/2.png" alt="imageHero">
+      </div>
+      <div class="item">
+        <img class="image" src="/img/home/hero/3.jpg" alt="imageHero">
+      </div>
     </div>
     <div class="container">
       <div class="row card justify-content-center">
-        <form action="" class="box-filter d-flex align-items-center justify-content-between">
+        <form action="" class="box-filter d-md-none align-items-center justify-content-between">
           <div class="right">
             <div class="search">
               <p class="title">جستجو</p>
@@ -337,12 +348,13 @@
             <div tab_content_title="item2" class="item">جدیدترین ها</div>
             <div tab_content_title="item3" class="item">محبوب ها</div>
           </div>
-          <a href="#" class="all-product">
+          <a href="#" class="all-product all_1 d-md-none">
             همه محصولات
             <i class="icon icon-Left"></i>
           </a>
         </div>
-        <div tab_content_item="item1" id="trendSlider1" class="slider d-flex align-items-start justify-content-center">
+        <div tab_content_item="item1" id="trendSlider"
+          class="trend-slider d-flex align-items-start justify-content-center">
           <a href="#" class="item d-flex flex-column">
             <div class="box-image">
               <img src="/img/home/trend-slider/Pic1.png" class="img" alt="image-slider">
@@ -476,140 +488,10 @@
             </div>
           </a>
         </div>
-        <div tab_content_item="item2" id="trendSlider2" class="slider d-flex align-items-start justify-content-center">
-          <a href="#" class="item d-flex flex-column">
-            <div class="box-image">
-              <img src="/img/home/trend-slider/Pic4.png" class="img" alt="image-slider">
-            </div>
-            <div class="content">
-              <div class="top d-flex align-items-center justify-content-between">
-                <h2 class="title">ترازوی چوبی</h2>
-                <p class="money">۳,۴۸۰,۰۰۰ <span class="toman">تومان</span></p>
-              </div>
-              <div class="bottom d-flex align-items-center justify-content-between">
-                <span class="score">
-                  ۴.۴
-                  <i class="icon icon-Star"></i>
-                </span>
-                <p class="gender d-flex align-items-center">
-                  دخترانه - پسرانه
-                  <span class="age">۱-۲ سال</span>
-                  <i class="icon icon-berthday"></i>
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="item d-flex flex-column">
-            <div class="box-image">
-              <img src="/img/home/trend-slider/Pic3.png" class="img" alt="image-slider">
-            </div>
-            <div class="content">
-              <div class="top d-flex align-items-center justify-content-between">
-                <h2 class="title">ترازوی چوبی</h2>
-                <p class="money">۳,۴۸۰,۰۰۰ <span class="toman">تومان</span></p>
-              </div>
-              <div class="bottom d-flex align-items-center justify-content-between">
-                <span class="score">
-                  ۴.۴
-                  <i class="icon icon-Star"></i>
-                </span>
-                <p class="gender d-flex align-items-center">
-                  دخترانه - پسرانه
-                  <span class="age">۱-۲ سال</span>
-                  <i class="icon icon-berthday"></i>
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="item d-flex flex-column">
-            <div class="box-image">
-              <img src="/img/home/trend-slider/Pic2.png" class="img" alt="image-slider">
-            </div>
-            <div class="content">
-              <div class="top d-flex align-items-center justify-content-between">
-                <h2 class="title">ترازوی چوبی</h2>
-                <p class="money">۳,۴۸۰,۰۰۰ <span class="toman">تومان</span></p>
-              </div>
-              <div class="bottom d-flex align-items-center justify-content-between">
-                <span class="score">
-                  ۴.۴
-                  <i class="icon icon-Star"></i>
-                </span>
-                <p class="gender d-flex align-items-center">
-                  دخترانه - پسرانه
-                  <span class="age">۱-۲ سال</span>
-                  <i class="icon icon-berthday"></i>
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="item d-flex flex-column">
-            <div class="box-image">
-              <img src="/img/home/trend-slider/Pic1.png" class="img" alt="image-slider">
-            </div>
-            <div class="content">
-              <div class="top d-flex align-items-center justify-content-between">
-                <h2 class="title">ترازوی چوبی</h2>
-                <p class="money">۳,۴۸۰,۰۰۰ <span class="toman">تومان</span></p>
-              </div>
-              <div class="bottom d-flex align-items-center justify-content-between">
-                <span class="score">
-                  ۴.۴
-                  <i class="icon icon-Star"></i>
-                </span>
-                <p class="gender d-flex align-items-center">
-                  دخترانه - پسرانه
-                  <span class="age">۱-۲ سال</span>
-                  <i class="icon icon-berthday"></i>
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="item d-flex flex-column">
-            <div class="box-image">
-              <img src="/img/home/trend-slider/Pic3.png" class="img" alt="image-slider">
-            </div>
-            <div class="content">
-              <div class="top d-flex align-items-center justify-content-between">
-                <h2 class="title">ترازوی چوبی</h2>
-                <p class="money">۳,۴۸۰,۰۰۰ <span class="toman">تومان</span></p>
-              </div>
-              <div class="bottom d-flex align-items-center justify-content-between">
-                <span class="score">
-                  ۴.۴
-                  <i class="icon icon-Star"></i>
-                </span>
-                <p class="gender d-flex align-items-center">
-                  دخترانه - پسرانه
-                  <span class="age">۱-۲ سال</span>
-                  <i class="icon icon-berthday"></i>
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="#" class="item d-flex flex-column">
-            <div class="box-image">
-              <img src="/img/home/trend-slider/Pic4.png" class="img" alt="image-slider">
-            </div>
-            <div class="content">
-              <div class="top d-flex align-items-center justify-content-between">
-                <h2 class="title">ترازوی چوبی</h2>
-                <p class="money">۳,۴۸۰,۰۰۰ <span class="toman">تومان</span></p>
-              </div>
-              <div class="bottom d-flex align-items-center justify-content-between">
-                <span class="score">
-                  ۴.۴
-                  <i class="icon icon-Star"></i>
-                </span>
-                <p class="gender d-flex align-items-center">
-                  دخترانه - پسرانه
-                  <span class="age">۱-۲ سال</span>
-                  <i class="icon icon-berthday"></i>
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
+        <a href="#" class="all-product all_2 d-md-block">
+          همه محصولات
+          <i class="icon icon-Left"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -618,35 +500,67 @@
     <div class="container">
       <div class="row card d-flex align-items-center justify-content-center flex-column">
         <h1 class="title">بهترین نسخه‌ی خودت رو بساز!</h1>
-        <div class="gallery d-flex align-items-center justify-content-center">
-          <a href="#" class="link d-flex justify-content-center">
-            <h3 class="desc">حیوانات</h3>
-            <img src="/img/home/gallery-skills/11.jpg" class="img" alt="img">
-          </a>
-          <a href="#" class="link d-flex justify-content-center">
-            <h3 class="desc">رانندگی</h3>
-            <img src="/img/home/gallery-skills/22.jpg" class="img" alt="img">
-          </a>
-          <a href="#" class="link d-flex justify-content-center">
-            <h3 class="desc">حل مسئله</h3>
-            <img src="/img/home/gallery-skills/33.jpg" class="img" alt="img">
-          </a>
-          <a href="#" class="link d-flex justify-content-center">
-            <h3 class="desc">تفننی</h3>
-            <img src="/img/home/gallery-skills/44.jpg" class="img" alt="img">
-          </a>
-          <a href="#" class="link d-flex justify-content-center">
-            <h3 class="desc">برج سازی</h3>
-            <img src="/img/home/gallery-skills/55.jpg" class="img" alt="img">
-          </a>
-          <a href="#" class="link d-flex justify-content-center">
-            <h3 class="desc">معماری</h3>
-            <img src="/img/home/gallery-skills/66.jpg" class="img" alt="img">
-          </a>
-          <a href="#" class="link d-flex justify-content-center">
-            <h3 class="desc">غصه گویی</h3>
-            <img src="/img/home/gallery-skills/77.jpg" class="img" alt="img">
-          </a>
+        <div class="gallery">
+          <div class="images-gallery1 d-md-none align-items-center justify-content-center">
+            <div class="item d-flex justify-content-center">
+              <h3 class="desc">حیوانات</h3>
+              <img src="/img/home/gallery-skills/11.jpg" class="img" alt="img">
+            </div>
+            <div class="item d-flex justify-content-center">
+              <h3 class="desc">رانندگی</h3>
+              <img src="/img/home/gallery-skills/22.jpg" class="img" alt="img">
+            </div>
+            <div class="item d-flex justify-content-center">
+              <h3 class="desc">حل مسئله</h3>
+              <img src="/img/home/gallery-skills/33.jpg" class="img" alt="img">
+            </div>
+            <div class="item d-flex justify-content-center">
+              <h3 class="desc">تفننی</h3>
+              <img src="/img/home/gallery-skills/44.jpg" class="img" alt="img">
+            </div>
+            <div class="item d-flex justify-content-center">
+              <h3 class="desc">برج سازی</h3>
+              <img src="/img/home/gallery-skills/55.jpg" class="img" alt="img">
+            </div>
+            <div class="item d-flex justify-content-center">
+              <h3 class="desc">معماری</h3>
+              <img src="/img/home/gallery-skills/66.jpg" class="img" alt="img">
+            </div>
+            <div class="item d-flex justify-content-center">
+              <h3 class="desc">غصه گویی</h3>
+              <img src="/img/home/gallery-skills/77.jpg" class="img" alt="img">
+            </div>
+          </div>
+          <div class="images-gallery2">
+            <div class="item d-flex justify-content-center">
+              <h3 class="desc">حیوانات</h3>
+              <img src="/img/home/gallery-skills/11.jpg" class="img" alt="img">
+            </div>
+            <div class="item d-flex justify-content-center">
+              <h3 class="desc">رانندگی</h3>
+              <img src="/img/home/gallery-skills/22.jpg" class="img" alt="img">
+            </div>
+            <div class="item d-flex justify-content-center">
+              <h3 class="desc">حل مسئله</h3>
+              <img src="/img/home/gallery-skills/33.jpg" class="img" alt="img">
+            </div>
+            <div class="item d-flex justify-content-center">
+              <h3 class="desc">تفننی</h3>
+              <img src="/img/home/gallery-skills/44.jpg" class="img" alt="img">
+            </div>
+            <div class="item d-flex justify-content-center">
+              <h3 class="desc">برج سازی</h3>
+              <img src="/img/home/gallery-skills/55.jpg" class="img" alt="img">
+            </div>
+            <div class="item d-flex justify-content-center">
+              <h3 class="desc">معماری</h3>
+              <img src="/img/home/gallery-skills/66.jpg" class="img" alt="img">
+            </div>
+            <div class="item d-flex justify-content-center">
+              <h3 class="desc">غصه گویی</h3>
+              <img src="/img/home/gallery-skills/77.jpg" class="img" alt="img">
+            </div>
+          </div>
           <div class="shadow">
             <img src="/img/home/gallery-skills/Ellipse 2.svg" class="img" alt="shadow">
           </div>
@@ -689,11 +603,12 @@
             <div tab_content_title2="item5" class="item">مهندسی</div>
           </div>
         </div>
-        <a href="#" class="all-product">
+        <a href="#" class="all-product all_1 d-md-none">
           همه محصولات
           <i class="icon icon-Left"></i>
         </a>
       </div>
+
       <div tab_content_item2="item1" id="filterSlider1" class="slider d-flex align-items-center justify-content-start">
         <a href="#" class="item d-flex align-items-center justify-content-center flex-column">
           <div class="image-slider">
@@ -840,154 +755,12 @@
           </div>
         </a>
       </div>
-      <div tab_content_item2="item2" id="filterSlider2" class="slider d-flex align-items-center justify-content-start">
-        <a href="#" class="item d-flex align-items-center justify-content-center flex-column">
-          <div class="image-slider">
-            <img src="/img/home/filter-slider/3.jpg" class="img" alt="img">
-          </div>
-          <div class="content">
-            <div class="top d-flex align-items-center justify-content-between">
-              <p class="title">بازی رنگ چین</p>
-              <p class="money">۳،۴۸۰،۰۰۰
-                <span class="toman">تومان</span>
-              </p>
-            </div>
-            <div class="bottom d-flex align-items-center justify-content-between">
-              <span class="score">
-                ۴.۴
-                <i class="icon icon-Star"></i>
-              </span>
-              <p class="gender d-flex align-items-center">
-                دخترانه - پسرانه
-                <span class="age">۱-۲ سال</span>
-                <i class="icon icon-berthday"></i>
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="item d-flex align-items-center justify-content-center flex-column">
-          <div class="image-slider">
-            <img src="/img/home/filter-slider/1.jpg" class="img" alt="img">
-          </div>
-          <div class="content">
-            <div class="top d-flex align-items-center justify-content-between">
-              <p class="title">بازی رنگ چین</p>
-              <p class="money">۳،۴۸۰،۰۰۰
-                <span class="toman">تومان</span>
-              </p>
-            </div>
-            <div class="bottom d-flex align-items-center justify-content-between">
-              <span class="score">
-                ۴.۴
-                <i class="icon icon-Star"></i>
-              </span>
-              <p class="gender d-flex align-items-center">
-                دخترانه - پسرانه
-                <span class="age">۱-۲ سال</span>
-                <i class="icon icon-berthday"></i>
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="item d-flex align-items-center justify-content-center flex-column">
-          <div class="image-slider">
-            <img src="/img/home/filter-slider/2.jpg" class="img" alt="img">
-          </div>
-          <div class="content">
-            <div class="top d-flex align-items-center justify-content-between">
-              <p class="title">بازی رنگ چین</p>
-              <p class="money">۳،۴۸۰،۰۰۰
-                <span class="toman">تومان</span>
-              </p>
-            </div>
-            <div class="bottom d-flex align-items-center justify-content-between">
-              <span class="score">
-                ۴.۴
-                <i class="icon icon-Star"></i>
-              </span>
-              <p class="gender d-flex align-items-center">
-                دخترانه - پسرانه
-                <span class="age">۱-۲ سال</span>
-                <i class="icon icon-berthday"></i>
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="item d-flex align-items-center justify-content-center flex-column">
-          <div class="image-slider">
-            <img src="/img/home/filter-slider/3.jpg" class="img" alt="img">
-          </div>
-          <div class="content">
-            <div class="top d-flex align-items-center justify-content-between">
-              <p class="title">بازی رنگ چین</p>
-              <p class="money">۳،۴۸۰،۰۰۰
-                <span class="toman">تومان</span>
-              </p>
-            </div>
-            <div class="bottom d-flex align-items-center justify-content-between">
-              <span class="score">
-                ۴.۴
-                <i class="icon icon-Star"></i>
-              </span>
-              <p class="gender d-flex align-items-center">
-                دخترانه - پسرانه
-                <span class="age">۱-۲ سال</span>
-                <i class="icon icon-berthday"></i>
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="item d-flex align-items-center justify-content-center flex-column">
-          <div class="image-slider">
-            <img src="/img/home/filter-slider/1.jpg" class="img" alt="img">
-          </div>
-          <div class="content">
-            <div class="top d-flex align-items-center justify-content-between">
-              <p class="title">بازی رنگ چین</p>
-              <p class="money">۳،۴۸۰،۰۰۰
-                <span class="toman">تومان</span>
-              </p>
-            </div>
-            <div class="bottom d-flex align-items-center justify-content-between">
-              <span class="score">
-                ۴.۴
-                <i class="icon icon-Star"></i>
-              </span>
-              <p class="gender d-flex align-items-center">
-                دخترانه - پسرانه
-                <span class="age">۱-۲ سال</span>
-                <i class="icon icon-berthday"></i>
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="item d-flex align-items-center justify-content-center flex-column">
-          <div class="image-slider">
-            <img src="/img/home/filter-slider/2.jpg" class="img" alt="img">
-          </div>
-          <div class="content">
-            <div class="top d-flex align-items-center justify-content-between">
-              <p class="title">بازی رنگ چین</p>
-              <p class="money">۳،۴۸۰،۰۰۰
-                <span class="toman">تومان</span>
-              </p>
-            </div>
-            <div class="bottom d-flex align-items-center justify-content-between">
-              <span class="score">
-                ۴.۴
-                <i class="icon icon-Star"></i>
-              </span>
-              <p class="gender d-flex align-items-center">
-                دخترانه - پسرانه
-                <span class="age">۱-۲ سال</span>
-                <i class="icon icon-berthday"></i>
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
+      <a href="#" class="all-product all_2 d-md-block">
+        همه محصولات
+        <i class="icon icon-Left"></i>
+      </a>
     </div>
-    <div class="box-image">
+    <div class="box-image d-md-none">
       <img src="/img/home/filter-slider/main.png" class="img" alt="img">
     </div>
   </section>
@@ -999,7 +772,7 @@
           <p class="text">
             بر اساس خرید های قبلی شما:
           </p>
-          <a href="#" class="all-product">
+          <a href="#" class="all-product all_1 d-md-none">
             همه محصولات
             <i class="icon icon-Left"></i>
           </a>
@@ -1139,11 +912,15 @@
             </div>
           </a>
         </div>
+        <a href="#" class="all-product all_2 d-md-block">
+          همه محصولات
+          <i class="icon icon-Left"></i>
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="steam">
+  <section class="steam d-md-none">
     <div class="container">
       <div class="row card d-flex align-items-center justify-content-center">
         <div class="image-steam d-flex justify-content-center">

@@ -41,7 +41,7 @@ window.addEventListener("load", () => {
 /*--------------slick slider---------------*/
 
 $(document).ready(function () {
-    $('#trendSlider1').slick({
+    $('#trendSlider').slick({
         rtl: true,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -64,32 +64,29 @@ $(document).ready(function () {
                     centerMode: true,
                     centerPadding: '65px',
                 }
-            }
-        ]
-    });
-
-    $('#trendSlider2').slick({
-        rtl: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        infinite: true,
-        responsive: [
+            },
             {
-                breakpoint: 1441,
+                breakpoint: 769,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '10px',
+                    centerPadding: '115px',
                 }
             },
             {
-                breakpoint: 1025,
+                breakpoint: 426,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '65px',
+                    centerPadding: '8px',
+                }
+            },
+            {
+                breakpoint: 321,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '21.5px',
                 }
             }
         ]

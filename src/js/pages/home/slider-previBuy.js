@@ -30,6 +30,30 @@ $(document).ready(function () {
                     centerMode: true,
                     centerPadding: '65px',
                 }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '100px',
+                }
+            },
+            {
+                breakpoint: 426,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '8px',
+                }
+            },
+            {
+                breakpoint: 321,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '21.5px',
+                }
             }
         ]
     });

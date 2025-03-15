@@ -62,30 +62,37 @@ $(document).ready(function () {
                     centerMode: true,
                     centerPadding: '20px',
                 }
-            }
-        ]
-    });
-
-    $('#filterSlider2').slick({
-        rtl: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        responsive: [
+            },
             {
-                breakpoint: 1025,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 2,
+                    centerMode: true,
+                    centerPadding: '10px',
                 }
             },
             {
-                breakpoint: 1025,
+                breakpoint: 426,
                 settings: {
                     slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '20px',
+                    centerPadding: '42px',
+                }
+            },
+            {
+                breakpoint: 376,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '30.5px',
+                }
+            },
+            {
+                breakpoint: 321,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: '34px',
                 }
             }
         ]

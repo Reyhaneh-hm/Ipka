@@ -12,7 +12,6 @@
             justify-content: space-around;
             margin-bottom: 95px;
             position: relative;
-            /* width: 100%;*/
 
             &::after {
                 background-color: #f7f7f7;
@@ -120,8 +119,6 @@
                     }
 
                     .TableOrder {
-                        // width: 100%;
-
                         .thead {
                             .tr {
                                 .th {
@@ -664,7 +661,6 @@
                                             align-items: center;
                                             justify-content: center;
                                             height: 63px;
-                                            // width: 77%;
                                             width: 100%;
                                             margin-block: 7px;
                                             transition: background-color 0.3s;
@@ -717,7 +713,6 @@
 
                     .item8 {
                         padding: 10px;
-                        // width: 67%;
 
                         .item {
                             background-color: #fbfbfb;

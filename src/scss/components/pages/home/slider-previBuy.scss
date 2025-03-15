@@ -1,6 +1,10 @@
 @import '../../../base/variables.scss';
 
 .slider-previBuy {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 120px;
+    }
+
     margin-top: 180px;
 
     .card {
@@ -10,22 +14,6 @@
             .text {
                 color: $main3;
                 font-size: 16px;
-            }
-
-            .all-product {
-                color: $main2;
-                cursor: pointer;
-                font-size: 15px;
-                width: 110px;
-                transition: all 0.3s;
-
-                &:hover {
-                    color: $main3;
-                }
-
-                .icon {
-                    font-size: 14px;
-                }
             }
         }
 
@@ -53,13 +41,21 @@
             }
 
             .item {
-                width: 394px;
+                @media screen and (max-width: 769px) {
+                    max-width: 394px !important;
+                }
+
+                width: 100%;
+                max-width: 394px;
+                min-width: 290px;
                 height: 295px;
                 gap: 10px;
                 margin-inline: 8px;
 
                 .box-image {
-                    width: 394px;
+                    width: 100%;
+                    max-width: 394px;
+                    min-width: 290px;
                     height: 240px;
                     border-radius: 12px;
 
@@ -89,6 +85,9 @@
                         .money {
                             color: $main3;
                             font-size: 15px;
+                            flex-wrap: nowrap;
+                            display: flex;
+                            gap: 4px;
 
                             .toman {
                                 color: #ABB5C6;
@@ -127,6 +126,29 @@
                     }
                 }
             }
+        }
+
+        .all-product {
+            color: $main2;
+            cursor: pointer;
+            font-size: 15px;
+            width: 110px;
+            transition: all 0.3s;
+
+            &:hover {
+                color: $main3;
+            }
+
+            .icon {
+                font-size: 14px;
+            }
+        }
+
+        .all_2 {
+            display: none;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
         }
     }
 }
