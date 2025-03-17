@@ -12,91 +12,90 @@
                 color: $main3;
             }
 
-            .scroll-specialProduct {
-                margin-top: 20px;
-                gap: 20px;
+            .bottom {
                 width: 100%;
-                overflow-x: auto;
-                white-space: nowrap;
-                padding-bottom: 10px;
 
-                &::-webkit-scrollbar-track {
-                    padding: 2px 0;
-                    background-color: #f6f6f6;
-                }
+                .scroll-specialProduct {
+                    margin-top: 20px;
+                    gap: 20px;
+                    padding-block: 10px;
+                    padding-inline: 0;
+                    overflow-x: auto;
+                    transition: all 0.3s;
 
-                &::-webkit-scrollbar {
-                    width: 1px;
-                    height: 2px;
-                }
-
-                &::-webkit-scrollbar-thumb {
-                    border-radius: 10px;
-                    background-color: #c1c8d5;
-                }
-
-                .item {
-                    border: $border;
-                    border-radius: 12px;
-                    width: 100%;
-                    max-width: 320px;
-                    min-width: 300px;
-                    height: 100px;
-                    padding: 2px;
-
-                    .image {
-                        width: 45%;
-                        height: 94px;
-                        overflow: hidden;
-                        border-radius: 4px;
-
-                        .img {
-                            width: 100%;
-                            object-fit: cover;
-                            aspect-ratio: 1 / 1.1;
-                        }
+                    &::-webkit-scrollbar {
+                        display: none;
                     }
 
-                    .content {
-                        width: 100%;
-                        height: 100%;
-                        gap: 16px;
-                        padding: 7px 10px 7px 10px;
+                    .row-product {
+                        gap: 20px;
+                        scroll-snap-align: start;
+                        flex-shrink: 0;
 
-                        .top {
-                            .title {
-                                color: $main3;
-                                font-size: 15px;
-                            }
+                        .item {
+                            border: $border;
+                            border-radius: 12px;
+                            width: 100%;
+                            max-width: 320px;
+                            min-width: 300px;
+                            height: 100px;
+                            padding: 2px;
 
-                            .score {
-                                color: $text;
-                                font-size: 15px;
+                            .image {
+                                width: 45%;
+                                height: 94px;
+                                overflow: hidden;
+                                border-radius: 12px;
 
-                                .icon {
-                                    color: $main3;
-                                    font-size: 12px;
-                                }
-                            }
-                        }
-
-                        .bottom {
-                            gap: 5px;
-
-                            .money {
-                                font-size: 15px;
-                                color: $main3;
-
-                                .toman {
-                                    color: $text;
-                                    font-size: 12px;
+                                .img {
+                                    width: 100%;
+                                    object-fit: cover;
+                                    aspect-ratio: 1 / 1.1;
                                 }
                             }
 
-                            .discount {
-                                color: $red;
-                                font-size: 14px;
-                                margin-left: 40px;
+                            .content {
+                                width: 100%;
+                                height: 100%;
+                                gap: 16px;
+                                padding: 7px 10px 7px 10px;
+
+                                .top {
+                                    .title {
+                                        color: $main3;
+                                        font-size: 15px;
+                                    }
+
+                                    .score {
+                                        color: $text;
+                                        font-size: 15px;
+
+                                        .icon {
+                                            color: $main3;
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+
+                                .bottom {
+                                    gap: 5px;
+
+                                    .money {
+                                        font-size: 15px;
+                                        color: $main3;
+
+                                        .toman {
+                                            color: $text;
+                                            font-size: 12px;
+                                        }
+                                    }
+
+                                    .discount {
+                                        color: $red;
+                                        font-size: 14px;
+                                        margin-left: 40px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -105,13 +104,18 @@
         }
 
         .box-bottom {
+            @media screen and (max-width: 768px) {
+                gap: 0;
+            }
+
             margin-top: 70px;
             gap: 35px;
 
-            .filter {
-                // width: 390px;
+            .filter,
+            .modal-filter {
                 width: 365px;
                 min-height: 500px;
+                flex-shrink: 0;
                 border: $border;
                 border-radius: 12px;
                 padding: 20px 10px;
@@ -147,6 +151,11 @@
                                 font-size: 15px;
                             }
 
+                            #min-price2,
+                            #max-price2 {
+                                font-size: 15px;
+                            }
+
                             .toman {
                                 color: #ABB5C6;
                                 font-size: 12px;
@@ -158,7 +167,8 @@
                         }
                     }
 
-                    #price-slider {
+                    #price-slider,
+                    #price-slider2 {
                         margin: 30px 0 15px;
                         height: 5px;
                         border-radius: 5px;
@@ -197,6 +207,16 @@
                                     &:active {
                                         cursor: grabbing;
                                     }
+                                }
+                            }
+                        }
+                    }
+
+                    #price-slider2 {
+                        .noUi-base {
+                            .noUi-origin {
+                                .noUi-handle {
+                                    left: 238px !important;
                                 }
                             }
                         }
@@ -314,18 +334,96 @@
                 }
             }
 
+            .filter {
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+
+            .mobile-filter {
+                @media screen and (max-width: 768px) {
+                    display: block;
+                }
+
+                display: none;
+                position: relative;
+
+                .filter-btn {
+                    color: $main3;
+                    background: $other3;
+                    font-size: 14px;
+                    border-radius: 50px;
+                    position: absolute;
+                    top: -40px;
+                    white-space: nowrap;
+                    padding: 15px 20px;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        background: $main1;
+                        padding-inline: 25px;
+                    }
+                }
+
+                .modal-filter {
+                    background-color: #fff;
+                    height: 83%;
+                    width: 300px;
+                    position: fixed;
+                    right: 0;
+                    top: 70px;
+                    transform: translateX(350px);
+                    transition: all 0.3s;
+                    border-radius: 0;
+                    z-index: 51;
+                    overflow-y: auto;
+                    direction: ltr;
+
+                    &::-webkit-scrollbar-track {
+                        padding: 2px 0;
+                        background-color: #e2e1e1;
+                        border-radius: 10px;
+                    }
+
+                    &::-webkit-scrollbar {
+                        width: 4px;
+                        border-radius: 10px;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $main3;
+                        border-radius: 5px;
+                    }
+
+                    &.active {
+                        transform: translateX(0);
+                    }
+
+                }
+            }
+
+
             .box-products {
+                @media screen and (max-width: 768px) {
+                    margin-top: 55px;
+                }
+
                 flex: 1;
+                max-width: 100%;
+                min-width: 0;
 
                 .tab-filter {
                     width: 100%;
-                    gap: 20px;
+                    gap: 10px;
 
                     .text {
                         font-size: 15px;
                         color: $main3;
                         gap: 5px;
                         width: 115px;
+                        padding-bottom: 10px;
+                        margin-bottom: -10px;
+                        flex-shrink: 0;
 
                         .icon {
                             color: $main3;
@@ -340,7 +438,7 @@
                         white-space: nowrap;
                         padding-bottom: 10px;
                         padding-left: 2px;
-                        margin-bottom: -15px;
+                        margin-bottom: -10px;
 
                         &::-webkit-scrollbar-track {
                             padding: 2px 0;
@@ -361,7 +459,6 @@
                             color: $text;
                             font-size: 14px;
                             cursor: pointer;
-                            margin-bottom: 5.3px;
                             transition: all 0.3s;
 
                             &:hover {
@@ -372,13 +469,37 @@
                 }
 
                 .products {
+                    @media screen and (max-width: 1440px) {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        margin: 40px auto;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+
                     margin-top: 40px;
                     flex-wrap: wrap;
+                    gap: 20px;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    justify-items: start;
+                    align-items: start;
 
                     .item {
+                        @media screen and (max-width: 1440px) {}
+
                         min-height: 100px;
-                        margin: 10px;
-                        width: 280px;
+                        width: 100%;
+                        max-width: 290px;
+                        min-width: 200px;
 
                         .img {
                             width: 100%;
@@ -401,8 +522,8 @@
                                 padding: 8px;
                                 font-size: 20px;
                                 border-radius: 50px;
-                                visibility: hidden;
-                                opacity: 0;
+                                visibility: visible;
+                                opacity: 1;
                                 transition: all 0.3s;
                             }
 
@@ -417,7 +538,6 @@
                                 .product-count {
                                     background: $main3;
                                     border-radius: 50px;
-                                    // padding: 5px 10px;
                                     width: 90px;
                                     height: 28px;
 
@@ -478,14 +598,14 @@
                             }
                         }
 
-                        &:hover {
-                            .content {
-                                .iconAddProduct {
-                                    visibility: visible;
-                                    opacity: 1;
-                                }
-                            }
-                        }
+                        // &:hover {
+                        //     .content {
+                        //         .iconAddProduct {
+                        //             visibility: visible;
+                        //             opacity: 1;
+                        //         }
+                        //     }
+                        // }
                     }
 
                     .add-product {
@@ -513,5 +633,11 @@
                 }
             }
         }
+    }
+}
+
+.gallery-skills .card .content {
+    @media screen and (max-width: 768px) {
+        margin-block: 110px;
     }
 }
