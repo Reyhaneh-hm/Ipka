@@ -1,10 +1,516 @@
+@import '../../../base/variables.scss';
+@import '../home/gallery-skills.scss';
+
+
 .product-list {
     .card {
-        .special-suggest {
-            .text {}
+        margin-top: 180px;
 
-            .scroll-specialProduct{
-                
+        .special-suggest {
+            .title {
+                font-size: 16px;
+                color: $main3;
+            }
+
+            .scroll-specialProduct {
+                margin-top: 20px;
+                gap: 20px;
+                width: 100%;
+                overflow-x: auto;
+                white-space: nowrap;
+                padding-bottom: 10px;
+
+                &::-webkit-scrollbar-track {
+                    padding: 2px 0;
+                    background-color: #f6f6f6;
+                }
+
+                &::-webkit-scrollbar {
+                    width: 1px;
+                    height: 2px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 10px;
+                    background-color: #c1c8d5;
+                }
+
+                .item {
+                    border: $border;
+                    border-radius: 12px;
+                    width: 100%;
+                    max-width: 320px;
+                    min-width: 300px;
+                    height: 100px;
+                    padding: 2px;
+
+                    .image {
+                        width: 45%;
+                        height: 94px;
+                        overflow: hidden;
+                        border-radius: 4px;
+
+                        .img {
+                            width: 100%;
+                            object-fit: cover;
+                            aspect-ratio: 1 / 1.1;
+                        }
+                    }
+
+                    .content {
+                        width: 100%;
+                        height: 100%;
+                        gap: 16px;
+                        padding: 7px 10px 7px 10px;
+
+                        .top {
+                            .title {
+                                color: $main3;
+                                font-size: 15px;
+                            }
+
+                            .score {
+                                color: $text;
+                                font-size: 15px;
+
+                                .icon {
+                                    color: $main3;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                        .bottom {
+                            gap: 5px;
+
+                            .money {
+                                font-size: 15px;
+                                color: $main3;
+
+                                .toman {
+                                    color: $text;
+                                    font-size: 12px;
+                                }
+                            }
+
+                            .discount {
+                                color: $red;
+                                font-size: 14px;
+                                margin-left: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .box-bottom {
+            margin-top: 70px;
+            gap: 35px;
+
+            .filter {
+                // width: 390px;
+                width: 365px;
+                min-height: 500px;
+                border: $border;
+                border-radius: 12px;
+                padding: 20px 10px;
+                position: sticky;
+                top: 175px;
+
+                .title {
+                    font-size: 20px;
+                    color: $main3;
+                    border-bottom: 2px solid $other3;
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
+
+                .renger-box {
+                    direction: rtl;
+                    max-width: 340px;
+                    margin: auto;
+                    padding: 12px 15px;
+                    background: #F8FAFD;
+                    border-radius: 12px;
+                    margin-top: 20px;
+
+                    .price-values {
+                        .text {
+                            color: $main3;
+                            font-size: 14px;
+
+                            #min-price,
+                            #max-price {
+                                margin-right: 10px;
+                                margin-left: 5px;
+                                font-size: 15px;
+                            }
+
+                            .toman {
+                                color: #ABB5C6;
+                                font-size: 12px;
+                            }
+                        }
+
+                        .icon {
+                            color: $main2;
+                        }
+                    }
+
+                    #price-slider {
+                        margin: 30px 0 15px;
+                        height: 5px;
+                        border-radius: 5px;
+                        border: none;
+                        background-color: #EAF1FB;
+
+                        .noUi-base {
+                            background-color: #EAF1FB;
+                            border-radius: 12px;
+
+                            .noUi-connects {
+                                .noUi-connect {
+                                    background-color: $main2 !important;
+                                }
+                            }
+
+                            .noUi-origin {
+                                .noUi-handle {
+                                    top: 50%;
+                                    left: 305px !important;
+                                    right: auto;
+                                    transform: translateY(-28%);
+                                    width: 10px !important;
+                                    height: 10px !important;
+                                    background-color: $main2 !important;
+                                    border-radius: 50%;
+                                    border: 0 !important;
+                                    box-shadow: none !important;
+                                    cursor: grab;
+
+                                    &::after,
+                                    &::before {
+                                        display: none;
+                                    }
+
+                                    &:active {
+                                        cursor: grabbing;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .bottom {
+
+                        .min,
+                        .max {
+                            color: #ABB5C6;
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                .items {
+                    .item {
+                        overflow: hidden;
+                        transition: all 0.3s;
+                        margin-bottom: 10px;
+
+                        .head {
+                            color: $main3;
+                            font-size: 18px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            padding-block: 20px;
+                            padding-inline: 25px;
+
+                            .icon {
+                                font-size: 21px;
+                                margin-right: auto;
+                                color: $main3;
+                                transition: all 0.3s;
+                            }
+                        }
+
+                        .box {
+                            padding-inline: 35px;
+                            padding-top: 20px;
+                            transition: all 0.5s;
+
+                            .item-box {
+                                padding-bottom: 20px;
+                                position: relative;
+                                gap: 10px;
+
+                                .text {
+                                    color: $main3;
+                                    font-size: 16px;
+                                    flex: 1;
+                                    cursor: default;
+                                    display: contents;
+                                }
+
+                                .image {}
+
+                                .checkBox {
+                                    display: block;
+                                    cursor: pointer;
+                                    width: 25px;
+                                    height: 25px;
+                                    border: $border;
+                                    border-radius: 5px;
+                                    position: relative;
+                                    overflow: hidden;
+                                    -webkit-appearance: none;
+                                    transition: all 0.3s;
+
+                                    .transition {
+                                        width: 60px;
+                                        height: 60px;
+                                        background-color: $main2;
+                                        left: -10px;
+                                        top: -10px;
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        position: absolute;
+                                        transform: rotateZ(45deg);
+                                        z-index: 100;
+                                        transition: all 0.3s;
+
+                                        &::after {
+                                            content: "";
+                                            display: block;
+                                            width: 8px;
+                                            height: 8px;
+                                            background: $white;
+                                            border-radius: 50px;
+                                            position: absolute;
+                                            left: 13px;
+                                            top: 26px;
+                                        }
+                                    }
+
+                                    &:has(input[type=checkbox]:checked) {
+                                        // border: 0;
+                                    }
+
+                                    input[type=checkbox]:checked+.transition {
+                                        visibility: visible;
+                                        opacity: 1;
+                                    }
+
+                                    input[type=checkbox] {
+                                        position: absolute;
+                                        left: 50px;
+                                        visibility: hidden;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .box-products {
+                flex: 1;
+
+                .tab-filter {
+                    width: 100%;
+                    gap: 20px;
+
+                    .text {
+                        font-size: 15px;
+                        color: $main3;
+                        gap: 5px;
+                        width: 115px;
+
+                        .icon {
+                            color: $main3;
+                            font-size: 22px;
+                        }
+                    }
+
+                    .items {
+                        gap: 20px;
+                        width: 100%;
+                        overflow-x: auto;
+                        white-space: nowrap;
+                        padding-bottom: 10px;
+                        padding-left: 2px;
+                        margin-bottom: -15px;
+
+                        &::-webkit-scrollbar-track {
+                            padding: 2px 0;
+                            background-color: #f6f6f6;
+                        }
+
+                        &::-webkit-scrollbar {
+                            width: 1px;
+                            height: 3px;
+                        }
+
+                        &::-webkit-scrollbar-thumb {
+                            border-radius: 10px;
+                            background-color: #c1c8d5;
+                        }
+
+                        .item {
+                            color: $text;
+                            font-size: 14px;
+                            cursor: pointer;
+                            margin-bottom: 5.3px;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                color: $main3;
+                            }
+                        }
+                    }
+                }
+
+                .products {
+                    margin-top: 40px;
+                    flex-wrap: wrap;
+
+                    .item {
+                        min-height: 100px;
+                        margin: 10px;
+                        width: 280px;
+
+                        .img {
+                            width: 100%;
+                            object-fit: cover;
+                            aspect-ratio: 1 / 0.8;
+                            border-radius: 12px;
+                        }
+
+                        .content {
+                            padding-block: 15px;
+                            gap: 12px;
+                            position: relative;
+
+                            .iconAddProduct {
+                                position: absolute;
+                                right: 10px;
+                                top: -46px;
+                                color: $white;
+                                background: $main3;
+                                padding: 8px;
+                                font-size: 20px;
+                                border-radius: 50px;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: all 0.3s;
+                            }
+
+                            .top {
+                                width: 100%;
+
+                                .title {
+                                    color: $main3;
+                                    font-size: 16px;
+                                }
+
+                                .product-count {
+                                    background: $main3;
+                                    border-radius: 50px;
+                                    // padding: 5px 10px;
+                                    width: 90px;
+                                    height: 28px;
+
+                                    .icon {
+                                        color: $white;
+                                        cursor: pointer;
+                                        font-size: 24px;
+                                        transition: all 0.3s;
+
+                                        &:hover {
+                                            color: $main1;
+                                        }
+                                    }
+
+                                    .decreament {
+                                        margin-right: -7px;
+                                        margin-bottom: 1px;
+                                    }
+
+                                    .increament {
+                                        margin-left: -7px;
+                                    }
+
+                                    .icon-Minus {
+                                        margin-bottom: 0;
+                                    }
+
+                                    .inputNumber {
+                                        border: unset;
+                                        font-size: 16px;
+                                        color: $white;
+                                        background: transparent;
+                                    }
+                                }
+                            }
+
+                            .bottom {
+                                width: 100%;
+
+                                .money {
+                                    color: $main3;
+                                    font-size: 15px;
+                                    flex-wrap: nowrap;
+                                    gap: 5px;
+
+                                    .toman {
+                                        color: #ABB5C6;
+                                        font-size: 12px;
+                                        margin-right: 2px;
+                                    }
+                                }
+
+                                .discount {
+                                    color: $red;
+                                    font-size: 14px;
+                                    margin-left: 40px;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            .content {
+                                .iconAddProduct {
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+
+                    .add-product {
+                        .img {
+                            aspect-ratio: 1 / 0.89;
+                        }
+                    }
+                }
+            }
+
+            .show-all {
+                margin: 0 auto;
+                margin-top: 30px;
+                padding: 12px 20px;
+                color: $main3;
+                background: $other3;
+                font-size: 14px;
+                border-radius: 40px;
+                transition: all 0.3s;
+                display: table;
+
+                &:hover {
+                    color: $white;
+                    background: $main3;
+                }
             }
         }
     }
