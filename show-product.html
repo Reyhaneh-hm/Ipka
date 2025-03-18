@@ -70,7 +70,7 @@
                             </div>
                             <a href="./order.html" class="link d-md-none">
                                 <i class="icon icon-Card" id="card"></i>
-                                <!-- <span class="number">۹۹</span> -->
+                                <span class="number">۹۹</span>
                             </a>
                             <a href="#" class="link d-md-none">
                                 <i class="icon icon-Ring" id="ring"></i>
@@ -327,7 +327,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="center d-flex align-items-center justify-content-start flex-column">
+                        <form class="center d-flex align-items-center justify-content-start flex-column">
                             <div class="box d-flex align-items-center justify-content-between">
                                 <div class="box-money d-flex flex-column align-items-start">
                                     <p class="money">
@@ -349,24 +349,23 @@
                                 <div class="mobile-btnAdd d-md-block d-flex align-items-center justify-content-center">
                                     <div class="count align-items-center justify-content-center d-none" id="numSpinner">
                                         <span class="icon icon-Plus increament"></span>
-                                        <input class="number text-center" step="1" min="1" max="10" type="number"
-                                            value="1">
+                                        <input name="qty" class="number text-center" step="1" min="1" max="10" type="number" value="1">
                                         <span class="icon icon-Trush decreament"></span>
                                     </div>
-                                    <div class="btn-add">افزودن به سبد خرید</div>
+                                    <button type="submit" name="submit" value="1" class="btn-add">افزودن به سبد خرید</button>
                                 </div>
                             </div>
                             <div class="buttons d-flex align-items-center justify-content-between">
-                                <a href="#" class="btn-addProduct d-flex align-items-center justify-content-center">
+                                <button type="submit" name="submit" value="1" class="btn-addProduct d-flex align-items-center justify-content-center">
                                     <i class="icon icon-Card"></i>
                                     <span class="text">افزودن به سبد خرید</span>
-                                </a>
-                                <a href="#" class="btn-buyProduct d-flex align-items-center justify-content-center">
+                                </button>
+                                <button type="submit" name="submit" value="1" class="btn-buyProduct d-flex align-items-center justify-content-center">
                                     <i class="icon icon-Flash"></i>
-                                    <span class="text">خرید و چرداخت</span>
-                                </a>
+                                    <span class="text">خرید و پرداخت</span>
+                                </button>
                             </div>
-                        </div>
+                        </form>
                         <div class="bottom">
                             <div class="features">
                                 <h4 class="question">چرا انتخابش کنی؟</h4>

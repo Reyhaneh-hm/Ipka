@@ -197,17 +197,17 @@
                     #card {
                         position: relative;
 
-                        &::after {
-                            content: "";
-                            width: 8px;
-                            height: 8px;
-                            display: block;
-                            background: $red;
-                            position: absolute;
-                            right: 0;
-                            bottom: 7px;
-                            border-radius: 50px;
-                        }
+                        // &::after {
+                        //     content: "";
+                        //     width: 8px;
+                        //     height: 8px;
+                        //     display: block;
+                        //     background: $red;
+                        //     position: absolute;
+                        //     right: 0;
+                        //     bottom: 7px;
+                        //     border-radius: 50px;
+                        // }
                     }
 
                     .number {

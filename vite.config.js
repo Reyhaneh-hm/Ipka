@@ -11,21 +11,26 @@ export default defineConfig({
     plugins: [Inspect()],
     base: "./",
     css: {
-        devSourcemap: true,
+        devSourcemap: false,
         postcss: "./postcss.config.js",
     },
     build: {
-        sourcemap: true,
+        sourcemap: false,
         rollupOptions: {
             input: {
                 index: resolve(__dirname, "./index.html")
             },
             output: {
+                entryFileNames: "assets/[name]-[hash].js",
+                chunkFileNames: "assets/[name]-[hash].js",
                 assetFileNames: (assetInfo) => {
-                    if (/\.(png|jpe?g|gif|svg)$/.test(assetInfo.name)) {
-                        return 'images/[name][extname]';
-                    }
-                    return 'assets/[name][extname]';
+                  if (/\.(css)$/.test(assetInfo.name)) {
+                    return 'assets/[name]-[hash][extname]';
+                  }
+                  if (/\.(png|jpe?g|gif|svg)$/.test(assetInfo.name)) {
+                    return 'images/[name][extname]';
+                  }
+                  return 'assets/[name]-[hash][extname]';
                 },
             },
         },

@@ -10,7 +10,7 @@
         }
 
         margin-top: 140px;
-        padding-inline: 115px;
+        // padding-inline: 115px;
 
         .aProduct {
             @media screen and (max-width: 768px) {
@@ -397,6 +397,9 @@
                         }
 
                         .mobile-btnAdd {
+                            @media screen and (min-width: 1024px) {
+                                display: none !important;
+                            }
                             .count {
                                 border-radius: 50px;
                                 width: 115px;
@@ -435,6 +438,7 @@
                                 padding: 14px;
                                 background: $main3;
                                 color: $white;
+                                border: 0;
                             }
                         }
                     }
@@ -474,6 +478,7 @@
                         .btn-addProduct {
                             border: 1px solid $main3;
                             color: $main3;
+                            background: transparent;
 
                             .icon {
                                 font-size: 16px;
@@ -752,7 +757,7 @@
                         color: #ABB5C6;
                         line-height: 2;
                         text-align: justify;
-                        width: 500px;
+                        // width: 500px;
                     }
                 }
 
