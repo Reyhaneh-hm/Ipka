@@ -60,18 +60,16 @@
                         border-radius: 12px;
                     }
 
-                    video {
+                    video,
+                    iframe {
                         width: 100%;
-                        max-width: 600px;
+                        height: 100%;
+                        object-fit: cover;
                         border-radius: 12px;
                     }
                 }
 
                 .gallery {
-                    // @media screen and (max-width: 375px) {
-                    //     height: 58px;
-                    // }
-
                     overflow-x: auto;
                     white-space: nowrap;
                     padding-bottom: 10px;
@@ -106,10 +104,6 @@
                         @media screen and (max-width: 425px) {
                             width: 122px;
                         }
-
-                        // @media screen and (max-width: 375px) {
-                        //     height: 58px;
-                        // }
 
                         width: 107px;
                         height: 100%;
