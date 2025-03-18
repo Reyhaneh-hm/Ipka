@@ -25,12 +25,12 @@ ul.breadcrumb {
   li {
     display: inline-block;
     font-size: 14px;
-    color: $main2;
+    color: #ABB5C6;
 
     &+li:before {
       padding: 5px;
       color: #707070;
-      content: "/\00a0";
+      content: "/";
     }
 
     a {
