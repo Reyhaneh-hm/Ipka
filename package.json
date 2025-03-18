@@ -13,6 +13,7 @@
     "vite-plugin-inspect": "^11.0.0"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "jquery": "^3.7.1",
     "sass": "^1.85.1",
     "slick": "^1.12.2",

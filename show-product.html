@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/images/navbar/Logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <title>نمایش محصول</title>
 </head>
 
@@ -234,7 +235,7 @@
 
                             </ul>
                         </div>
-                        <div class="user">
+                        <div class="user  d-md-none">
                             <img src="/images/navbar/Avatar.png" class="img-user" alt="avatar">
                         </div>
                     </div>
@@ -259,26 +260,29 @@
                 <div class="aProduct d-flex align-items-start justify-content-center">
                     <div class="image-product d-flex align-items-center justify-content-center flex-column">
                         <div class="big-img">
-                            <img src="./public/img/show-product/Pic3.png" class="img" alt="">
+                            <img src="/img/show-product/Pic3.png" class="img" alt="image-product">
                         </div>
+
                         <div class="gallery d-flex align-items-center justify-content-start">
-                            <div class="item active">
-                                <img src="./public/img/show-product/Pic3.png" class="img" alt="">
+                            <div class="item active" data-fancybox="product" data-src="/img/show-product/Pic3.png">
+                                <img src="/img/show-product/Pic3.png" class="img" alt="image-product">
                             </div>
-                            <div class="item">
-                                <img src="./public/img/show-product/Pic5.jpg" class="img" alt="">
+                            <div class="item" data-fancybox="product" data-src="/img/show-product/Pic5.jpg">
+                                <img src="/img/show-product/Pic5.jpg" class="img" alt="image-product">
                             </div>
-                            <div class="item">
-                                <img src="./public/img/show-product/Pic2.png" class="img" alt="">
+                            <div class="item" data-fancybox="product" data-src="/img/show-product/Pic2.png">
+                                <img src="/img/show-product/Pic2.png" class="img" alt="image-product">
                             </div>
-                            <div class="item">
-                                <img src="./public/img/show-product/Pic6.jpg" class="img" alt="">
+                            <div class="item" data-fancybox="product" data-src="/img/show-product/Pic6.jpg">
+                                <img src="/img/show-product/Pic6.jpg" class="img" alt="image-product">
                             </div>
-                            <div class="item">
-                                <img src="./public/img/show-product/Pic4.png" class="img" alt="">
+                            <div class="item d-flex align-items-center justify-content-center" data-fancybox="product"
+                                data-src="/img/show-product/Pic4.png">
+                                <img src="/img/show-product/Pic4.png" class="img" alt="image-product">
                                 <i class="icon icon-Camera"></i>
                             </div>
                         </div>
+
                         <div class="product-tags d-flex align-items-center justify-content-start">
                             <div class="item">
                                 <i class="icon icon-Like"></i>
@@ -325,10 +329,13 @@
                         </div>
                         <div class="center d-flex align-items-center justify-content-start flex-column">
                             <div class="box d-flex align-items-center justify-content-between">
-                                <p class="money">
-                                    454,000
-                                    <span class="toman">تومان</span>
-                                </p>
+                                <div class="box-money d-flex flex-column align-items-start">
+                                    <p class="money">
+                                        454,000
+                                        <span class="toman">تومان</span>
+                                    </p>
+                                    <s class="discount">4,000,000</s>
+                                </div>
                                 <div class="add d-flex align-items-center justify-content-center">
                                     <span class="text">تعداد :</span>
                                     <div class="product-count align-items-center justify-content-center d-flex"
@@ -338,6 +345,15 @@
                                             value="4" data-listener-added_8626077c="true">
                                         <span class="icon icon-Minus decreament"></span>
                                     </div>
+                                </div>
+                                <div class="mobile-btnAdd d-md-block d-flex align-items-center justify-content-center">
+                                    <div class="count align-items-center justify-content-center d-none" id="numSpinner">
+                                        <span class="icon icon-Plus increament"></span>
+                                        <input class="number text-center" step="1" min="1" max="10" type="number"
+                                            value="1">
+                                        <span class="icon icon-Trush decreament"></span>
+                                    </div>
+                                    <div class="btn-add">افزودن به سبد خرید</div>
                                 </div>
                             </div>
                             <div class="buttons d-flex align-items-center justify-content-between">
@@ -546,7 +562,7 @@
                     </div>
 
                 </div>
-                <div class="box d-flex align-items-start justify-content-center">
+                <div class="box-desc d-flex align-items-start justify-content-center">
                     <div class="desc-product">
                         <p class="title">توضیحات محصول</p>
                         <p class="desc">بازی انبر و بلوک یک تجربه سرگرم‌کننده و آموزشی است که برای تقویت دقت، سرعت عمل و
@@ -831,7 +847,7 @@
                     <img src="/images/navbar/Avatar.png" class="img-user" alt="avatar">
                     <span class="title">پروفایل</span>
                 </a>
-                <a href="./index.html" class="link active">
+                <a href="./index.html" class="link">
                     <i class="icon icon-home"></i>
                     <span class="title">خانه</span>
                 </a>
@@ -853,6 +869,7 @@
 
     <script type="module" src="/main.js"></script>
     <script type="module" src="/src/js/pages/show-product/show-product.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 </body>
 
 </html>

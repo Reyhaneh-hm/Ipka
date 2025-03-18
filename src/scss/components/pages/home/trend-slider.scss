@@ -1,7 +1,7 @@
 @import '../../../base/variables.scss';
 
 .trend-slider {
-    margin-top: 60px;
+    margin-top: 30px;
 
     .card {
         gap: 25px;
@@ -61,7 +61,7 @@
             }
         }
 
-        .trend-slider {
+        .slider {
             gap: 16px;
             width: 100%;
             overflow: hidden;

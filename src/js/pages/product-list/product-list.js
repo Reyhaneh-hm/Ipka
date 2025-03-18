@@ -107,56 +107,53 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /*-------------------Slider Product-------------------*/
-
 window.addEventListener("load", () => {
     document.querySelectorAll("[scroll_container]").forEach(t => {
-        let e = !1, i, s;
+        let e = false, i, s;
+
         t.addEventListener("mousedown", n => {
-            e = !0,
-                i = n.pageX - t.offsetLeft,
-                s = t.scrollLeft
-        }
-        ),
-            t.addEventListener("mouseleave", () => {
-                e = !1,
-                    t.classList.remove("active")
-            }
-            ),
-            t.addEventListener("mouseup", () => {
-                e = !1,
-                    t.classList.remove("active")
-            }
-            ),
-            t.addEventListener("mousemove", n => {
-                if (!e)
-                    return;
-                n.preventDefault();
-                const r = (n.pageX - t.offsetLeft - i) * 1;
-                t.scrollLeft = s - r,
-                    t.classList.add("active")
-            }
-            ),
-            t.addEventListener("touchstart", n => {
-                e = !0,
-                    i = n.touches[0].pageX - t.offsetLeft,
-                    s = t.scrollLeft
-            }
-            ),
-            t.addEventListener("touchend", () => {
-                e = !1,
-                    t.classList.remove("active")
-            }
-            ),
-            t.addEventListener("touchmove", n => {
-                if (!e)
-                    return;
-                const r = (n.touches[0].pageX - t.offsetLeft - i) * 1;
-                t.scrollLeft = s - r,
-                    t.classList.add("active")
-            }
-            )
-    }
-    )
+            e = true;
+            i = n.pageX - t.offsetLeft;
+            s = t.scrollLeft;
+            t.classList.add("active");
+        });
+
+        t.addEventListener("mouseleave", () => {
+            e = false;
+            t.classList.remove("active");
+        });
+
+        t.addEventListener("mouseup", () => {
+            e = false;
+            t.classList.remove("active");
+        });
+
+        t.addEventListener("mousemove", n => {
+            if (!e) return;
+            n.preventDefault();
+            const r = (n.pageX - t.offsetLeft - i);
+            t.scrollLeft = s - r;
+            t.classList.add("active");
+        });
+
+        t.addEventListener("touchstart", n => {
+            e = true;
+            i = n.touches[0].pageX - t.offsetLeft;
+            s = t.scrollLeft;
+        });
+
+        t.addEventListener("touchend", () => {
+            e = false;
+            t.classList.remove("active");
+        });
+
+        t.addEventListener("touchmove", n => {
+            if (!e) return;
+            const r = (n.touches[0].pageX - t.offsetLeft - i);
+            t.scrollLeft = s - r;
+            t.classList.add("active");
+        });
+    });
 });
 
 /*--------------------show filter----------------------*/
@@ -171,4 +168,37 @@ filterBtn.addEventListener("click", () => {
 });
 overlay.addEventListener("click", () => {
     [overlay, modalFilter].forEach((item) => item.classList.remove("active"));
+});
+/*-----------------accordion menu--------------------*/
+window.addEventListener("load", () => {
+    const filterItem = document.querySelectorAll("[filte_item]");
+
+    filterItem.forEach((item) => {
+        if (!item) return;
+
+        const headItem = item.querySelector(".head");
+        const lists = item.querySelector(".box");
+
+        item.style.height = headItem.offsetHeight + "px";
+        const boxHeight = lists.offsetHeight;
+
+        headItem.addEventListener("click", () => {
+            filterItem.forEach((otherItem) => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove("active");
+                    otherItem.style.height = headItem.offsetHeight + "px";
+                }
+            });
+
+            if (!item.classList.contains("active")) {
+                item.classList.add("active");
+                item.style.height = boxHeight + headItem.offsetHeight + "px";
+            } else {
+                item.classList.remove("active");
+                item.style.height = headItem.offsetHeight + "px";
+            }
+        });
+        filterItem[0].querySelector(".head").click();
+    });
+
 });

@@ -12,6 +12,8 @@
     font-feature-settings: "ss02";
 }
 
+/*------------------overlay--------------------*/
+
 .overlay {
     inset: 0;
     opacity: 0;
@@ -39,6 +41,33 @@
     }
 }
 
+/*------------------FancyBox-------------------*/
+
+.fancybox__container *,
+.fancybox__container *::before,
+.fancybox__container *::after {
+    direction: ltr;
+}
+
+.fancybox__slide .fancybox__content {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.fancybox__content {
+    width: max-content;
+    height: max-content;
+}
+
+.fancybox-slide {
+    margin-inline: 20px;
+}
+.fancybox-carousel{
+    gap: 20px;
+}
+
+/*-----------------------------------------*/
 ::-moz-selection {
     background: $main1;
     color: $main3;

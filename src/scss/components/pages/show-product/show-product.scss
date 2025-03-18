@@ -6,15 +6,30 @@
     .card {
         @media screen and (max-width: 1024px) {
             padding-inline: 0;
+            margin-top: 115px;
         }
 
         margin-top: 140px;
         padding-inline: 115px;
 
         .aProduct {
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                align-items: center !important;
+            }
+
             gap: 20px;
+            position: relative;
 
             .image-product {
+                @media screen and (max-width: 1024px) {
+                    max-width: 470px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    max-width: 100vw;
+                }
+
                 width: 100%;
                 max-width: 600px;
                 min-width: 300px;
@@ -23,6 +38,14 @@
                 gap: 16px;
 
                 .big-img {
+                    @media screen and (max-width: 1024px) {
+                        height: 390px;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        height: 300px;
+                    }
+
                     width: 100%;
                     border-radius: 12px;
                     height: 455px;
@@ -34,6 +57,7 @@
                         height: 100%;
                         object-fit: cover;
                         // aspect-ratio: 1 / 0.93;
+                        border-radius: 12px;
                     }
 
                     video {
@@ -44,16 +68,58 @@
                 }
 
                 .gallery {
+                    // @media screen and (max-width: 375px) {
+                    //     height: 58px;
+                    // }
+
+                    overflow-x: auto;
+                    white-space: nowrap;
+                    padding-bottom: 10px;
                     width: 100%;
                     gap: 16px;
 
+                    &::-webkit-scrollbar-track {
+                        padding: 2px 0;
+                        background-color: #f6f6f6;
+                    }
+
+                    &::-webkit-scrollbar {
+                        width: 1px;
+                        height: 3px;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        border-radius: 10px;
+                        background-color: #c1c8d5;
+                    }
+
                     .item {
+                        @media screen and (max-width: 1024px) {
+                            width: 81px;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            min-height: 120px;
+                            width: 126px;
+                        }
+
+                        @media screen and (max-width: 425px) {
+                            width: 122px;
+                        }
+
+                        // @media screen and (max-width: 375px) {
+                        //     height: 58px;
+                        // }
+
                         width: 107px;
-                        height: 103px;
+                        height: 100%;
+                        min-height: 50px;
+                        max-height: 103px;
                         border-radius: 4px;
                         overflow: hidden;
                         cursor: pointer;
                         position: relative;
+                        flex-shrink: 0;
 
                         .img {
                             width: 100%;
@@ -64,11 +130,15 @@
                         }
 
                         .icon {
+                            @media screen and (max-width: 375px) {
+                                font-size: 30px;
+                            }
+
                             font-size: 35px;
                             color: $white;
                             position: absolute;
-                            top: 32%;
-                            right: 30%;
+                            // top: 32%;
+                            // right: 30%;
                             z-index: 2;
                         }
 
@@ -127,11 +197,18 @@
                 min-width: 0;
                 gap: 45px;
 
+
                 .top {
+                    @media screen and (max-width: 768px) {
+                        margin-top: 25px;
+                    }
+
                     gap: 15px;
+                    position: relative;
 
                     .box {
                         width: 100%;
+                        margin: 0;
 
                         .title {
                             color: $main3;
@@ -145,6 +222,12 @@
                         }
 
                         .catalog {
+                            @media screen and (max-width: 725px) {
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                            }
+
                             flex-shrink: 0;
 
                             .icon {
@@ -224,26 +307,62 @@
                 }
 
                 .center {
+                    @media screen and (max-width: 1440px) {
+                        width: 100%;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        position: fixed;
+                        bottom: 70px;
+                        right: 0;
+                        background: #fff;
+                        width: 100%;
+                        padding-inline: 4%;
+                        padding-block: 6px;
+                        z-index: 1;
+                        border-top: $border;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        flex-direction: row !important;
+                        justify-content: space-between !important;
+                        height: 70px;
+                    }
+
                     width: 490px;
                     gap: 20px;
 
                     .box {
                         width: 100%;
 
-                        .money {
-                            color: $main3;
-                            font-size: 22px;
-                            flex-wrap: nowrap;
-                            gap: 5px;
+                        .box-money {
+                            .money {
+                                color: $main3;
+                                font-size: 22px;
+                                flex-wrap: nowrap;
+                                gap: 5px;
 
-                            .toman {
-                                color: #ABB5C6;
+                                .toman {
+                                    color: #ABB5C6;
+                                    font-size: 14px;
+                                    margin-right: 2px;
+                                }
+                            }
+
+                            .discount {
+                                display: none;
+                                color: $red;
                                 font-size: 14px;
-                                margin-right: 2px;
+                                margin-left: 40px;
                             }
                         }
 
+
                         .add {
+                            @media screen and (max-width: 768px) {
+                                display: none !important;
+                            }
+
                             gap: 10px;
 
                             .text {
@@ -282,14 +401,65 @@
                                 }
                             }
                         }
+
+                        .mobile-btnAdd {
+                            .count {
+                                border-radius: 50px;
+                                width: 115px;
+                                height: 70px;
+
+                                .icon {
+                                    color: #ABB5C6;
+                                    background: #F3F7FD;
+                                    border-radius: 4px;
+                                    cursor: pointer;
+                                    font-size: 25px;
+                                    transition: all 0.3s;
+
+                                    &:hover {
+                                        color: $main3;
+                                    }
+                                }
+
+                                .icon-Minus {
+                                    margin-bottom: 0;
+                                }
+
+                                .number {
+                                    border: unset;
+                                    font-size: 17px;
+                                    color: $main3;
+                                    margin-bottom: -5px;
+                                    background: transparent;
+                                }
+                            }
+
+                            .btn-add {
+                                border-radius: 6px;
+                                flex-shrink: 0;
+                                font-size: 12px;
+                                padding: 14px;
+                                background: $main3;
+                                color: $white;
+                            }
+                        }
                     }
 
                     .buttons {
+                        @media screen and (max-width: 768px) {
+                            display: none !important;
+                        }
+
                         gap: 20px;
                         width: 100%;
 
                         .btn-addProduct,
                         .btn-buyProduct {
+                            @media screen and (max-width: 375px) {
+                                padding-inline: 2px;
+                                font-size: 12px;
+                            }
+
                             border-radius: 6px;
                             flex-shrink: 0;
                             width: 48%;
@@ -363,6 +533,20 @@
                     }
 
                     .desc {
+                        @media screen and (max-width: 1024px) {
+                            margin-top: 105px;
+                            width: 91vw;
+                            position: relative;
+                            right: -48vw;
+                            bottom: 0;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            margin-top: 50px;
+                            position: static;
+                            width: unset;
+                        }
+
                         margin-top: 50px;
 
                         .box {
@@ -398,6 +582,7 @@
                             padding-right: 25px;
                             margin-bottom: 20px;
                             position: relative;
+                            line-height: 1.5;
 
                             &::after {
                                 content: "";
@@ -515,11 +700,19 @@
             }
         }
 
-        .box {
+        .box-desc {
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+
             gap: 20px;
             margin-top: 60px;
 
             .desc-product {
+                @media screen and (max-width: 768px) {
+                    max-width: 100%;
+                }
+
                 width: 100%;
                 max-width: 600px;
                 min-width: 300px;
@@ -557,6 +750,10 @@
                     }
 
                     .desc {
+                        @media screen and (max-width: 768px) {
+                            width: 100%;
+                        }
+
                         font-size: 14px;
                         color: #ABB5C6;
                         line-height: 2;
@@ -645,5 +842,12 @@
                 }
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .gallery-skills .card .content {
+        margin-bottom: 140px;
     }
 }

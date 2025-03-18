@@ -1,10 +1,13 @@
 @import '../../../base/variables.scss';
 
 .filter-slider {
+    @media screen and (max-width: 1440px) {
+        margin-top: 0;
+    }
     width: 100%;
     min-height: 470px;
     background: #F8F8F8;
-    margin-top: 180px;
+    margin-top: 120px;
 
     .card {
         @media screen and (max-width: 1440px) {

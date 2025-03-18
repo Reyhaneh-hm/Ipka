@@ -8,7 +8,7 @@
             padding-inline: 0;
         }
 
-        margin-top: 180px;
+        margin-top: 140px;
         padding-inline: 115px;
 
         .special-suggest {
@@ -125,7 +125,9 @@
                 border-radius: 12px;
                 padding: 20px 10px;
                 position: sticky;
-                top: 175px;
+                top: 75px;
+                // bottom: 75px; /* فاصله 75 پیکسلی از پایین */
+                transition: all 0.3s ease-in-out;
 
                 .title {
                     font-size: 20px;
@@ -238,10 +240,22 @@
                 }
 
                 .items {
+                    [scroll_container] {
+                        user-select: none;
+                    }
+
                     .item {
                         overflow: hidden;
                         transition: all 0.3s;
                         margin-bottom: 10px;
+
+                        &.active {
+                            .head {
+                                .icon {
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
 
                         .head {
                             color: $main3;
@@ -264,6 +278,24 @@
                             padding-inline: 35px;
                             padding-top: 20px;
                             transition: all 0.5s;
+                            max-height: 400px;
+                            overflow-y: auto;
+
+                            &::-webkit-scrollbar-track {
+                                padding: 2px 0;
+                                background-color: #e2e1e1;
+                                border-radius: 10px;
+                            }
+
+                            &::-webkit-scrollbar {
+                                width: 4px;
+                                border-radius: 10px;
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                background-color: $main3;
+                                border-radius: 5px;
+                            }
 
                             .item-box {
                                 padding-bottom: 20px;
@@ -505,6 +537,7 @@
                         width: 100%;
                         max-width: 290px;
                         min-width: 200px;
+                        transition: all 0.3s;
 
                         .img {
                             width: 100%;
@@ -603,14 +636,9 @@
                             }
                         }
 
-                        // &:hover {
-                        //     .content {
-                        //         .iconAddProduct {
-                        //             visibility: visible;
-                        //             opacity: 1;
-                        //         }
-                        //     }
-                        // }
+                        &:hover {
+                            transform: translateY(-4px);
+                        }
                     }
 
                     .add-product {
@@ -644,5 +672,10 @@
 .gallery-skills .card .content {
     @media screen and (max-width: 768px) {
         margin-block: 110px;
+    }
+
+    @media screen and (max-width: 425px) {
+        margin-bottom: 110px;
+        margin-top: 25px;
     }
 }

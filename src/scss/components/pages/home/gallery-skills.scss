@@ -10,11 +10,15 @@
 // }
 
 .gallery-skills {
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 1440px) {
         margin-top: 130px;
     }
 
-    margin-top: 180px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 110px;
+    }
+
+    margin-top: 140px;
     overflow: hidden;
 
     .card {
@@ -25,9 +29,17 @@
         }
 
         .gallery {
+            @media screen and (max-width: 1440px) {
+                margin-top: 110px;
+            }
+
+            @media screen and (max-width: 768px) {
+                margin-top: 80px;
+            }
+
             width: 100%;
             min-height: 190px;
-            margin-top: 180px;
+            margin-top: 130px;
             position: relative;
 
             .images-gallery1 {
@@ -365,10 +377,19 @@
                 margin-top: 60px;
             }
 
+            @media screen and (max-width: 1024px) {
+                margin-top: 110px;
+            }
+
+            @media screen and (max-width: 768px) {
+                margin-top: 70px;
+                margin-bottom: 100px;
+            }
+
             width: 370px;
             min-height: 200px;
             gap: 20px;
-            margin-top: 160px;
+            margin-top: 125px;
 
             .text {
                 font-size: 15px;
