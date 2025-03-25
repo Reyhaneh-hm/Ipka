@@ -51,7 +51,7 @@
                     margin-bottom: 5px;
                 }
 
-                .title {
+                h2 {
                     font-size: 18px;
                     color: $main2;
                     display: -webkit-box;
@@ -61,8 +61,8 @@
                     -webkit-line-clamp: 1;
                 }
 
-                .box {
-                    .itemBox {
+                ul {
+                    li {
                         margin-bottom: 12px;
                         color: #707070;
                         font-size: 16px;
@@ -83,10 +83,10 @@
                             font-size: 21px;
                         }
 
-                        .text {
+                        p {
                             font-size: 15px;
 
-                            .desc {
+                            div {
                                 color: $main3;
                                 font-size: 16px;
                             }
@@ -213,8 +213,8 @@
                 border-radius: 12px;
                 padding: 30px 20px;
 
-                .box {
-                    .itemInfo {
+                ul {
+                    li {
                         color: $main3;
                         font-size: 16px;
                         margin-bottom: 25px;
@@ -224,7 +224,7 @@
                         text-overflow: ellipsis;
                         -webkit-line-clamp: 1;
 
-                        span {
+                        div {
                             color: $text;
                             font-size: 16px;
                         }
