@@ -41,7 +41,7 @@ window.addEventListener("load", () => {
 /*--------------slick slider---------------*/
 
 $(document).ready(function () {
-    $('#filterSlider1').slick({
+    $('.filterSlider1').slick({
         rtl: true,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -99,3 +99,8 @@ $(document).ready(function () {
     });
 });
 
+$('.tab-content .filter .items .item').on('click', function () {
+    setTimeout(function () {
+        $('.filterSlider1').slick('setPosition');
+    }, 1);
+});

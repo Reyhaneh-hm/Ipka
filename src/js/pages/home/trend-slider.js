@@ -41,13 +41,16 @@ window.addEventListener("load", () => {
 /*--------------slick slider---------------*/
 
 $(document).ready(function () {
-    $('#trendSlider').slick({
+    $('.trendSlider').slick({
         rtl: true,
         autoplay: true,
+        draggable: true,
         autoplaySpeed: 3000,
         slidesToShow: 4,
         slidesToScroll: 1,
         infinite: true,
+        lazyLoad: 'ondemand',
+        mobileFirst: false,
         responsive: [
             {
                 breakpoint: 1441,
@@ -91,4 +94,11 @@ $(document).ready(function () {
             }
         ]
     });
+});
+
+
+$('.tab-content .filter .item').on('click', function () {
+    setTimeout(function () {
+        $('.trendSlider').slick('setPosition');
+    }, 1);
 });
