@@ -10,7 +10,9 @@ numberSpinner.forEach((item) => {
     const maxValue = input.getAttribute("max");
     const stepValue = input.getAttribute("step");
 
-    input.value = minValue;
+    if(input.value != '') {
+        input.value = minValue;
+    }
 
     increament.addEventListener("click", () => {
         if (+input.value < +maxValue) {
